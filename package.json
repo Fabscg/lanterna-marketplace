@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Fabscg/lanterna-marketplace#readme",
   "dependencies": {
-    "bootstrap": "^3.3.4"
+    "bootstrap": "^3.4.1",
+    "nodemon": "^2.0.16"
   }
 }
