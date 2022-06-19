@@ -27,9 +27,9 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
                 <span class="navbar-brand page-scroll" href="#page-top"> <i class="fa-solid fa-pizza-slice"></i>
                     Lanterna
                     Restaurant & Marketplace</span>
@@ -80,10 +80,11 @@
         <div class="container-restaurant">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="about-img"><img src="assets/img/about.jpg" class="img-responsive" alt="food"></div>
+                    <div class="about-img"><img src="assets/img/about.jpg" class="img-responsive"
+                            alt="olives, salad, different food"></div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class=" about-text">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="about-text">
                         <h2>Our Restaurant</h2>
                         <hr>
                         <p>Welcome to Lanterna Restaurant & Marketplace. Enjoy the authentic Italian cuisine from the
@@ -99,14 +100,14 @@
         </div>
     </div>
 
+
     <section id="menu">
-        <h2><a href="#menu">Menu</a></h2>
+        <h2>Menu</h2>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button btn-lg btn-block btn-dark bg-dark" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                        aria-controls="collapseOne">
+                    <button class="salads btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <i class="fa-solid fa-plus"></i> SALADS
                     </button>
                 </h2>
@@ -114,21 +115,27 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <li>House Salad<span>small $7 large $12</span></li>
+                        <hr>
                         <p>Letucce, tomatoes, cucumbers tossed with homemade italian balsamic dressing</p>
 
                         <li>Ceasar Salad<span>small $7 large $12</span></li>
+                        <hr>
                         <p>Lettuce homemade croutons and parmigiano cheese</p>
 
                         <li>Greek Salad<span>small $10 large $15</span></li>
+                        <hr>
                         <p>Lettuce, tomatoes, cucumber, onions, olives, feta cheese with oregano tossed in olive oil &
                             balsamic vinegar dressing.</p>
 
                         <li>Caprese Salad<span>small $10 large $17</span></li>
+                        <hr>
                         <p>Sliced tomatoes topped with bocconcini cheese in a basil olive oil dressing</p>
                         <div class="additions">
                             <p>ADDITIONS</p>
                             <em>Grill Chicken <span>$4</span></em>
+                            <hr>
                             <em>Veal or Chicken Parmigiana<span>$7</span></em></p>
+                            <hr>
                         </div>
 
                     </div>
@@ -136,9 +143,8 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed btn-lg btn-block btn-dark bg-dark" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                        aria-controls="collapseTwo">
+                    <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <i class="fa-solid fa-plus"></i> PASTA
                     </button>
                 </h2>
@@ -146,31 +152,47 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li class="pasta-menu">Penne in Tomato and Basil<span>$12</span> <i
-                                    class="fa-solid fa-leaf"></i></li>
-                            <li class="pasta-menu">Penne Arrabiata(Spicy tomato sauce)<span>$14</span><i
-                                    class="fa-solid fa-leaf"></i><i class="fa-solid fa-pepper-hot"></i></li>
-                            <li class="pasta-menu">Penne alla Vodka(Seved with bacon)<span>$15</span></li>
-                            <li class="pasta-menu">Rigatoni Bolognese(Meat sauce)<span>$15</span></li>
-                            <li class="pasta-menu">Spaguetti Bolognese<span>$15</span></li>
-                            <li class="pasta-menu">Ravioli(Meat filling)<span>$15</span></li>
-                            <li class="pasta-menu">Tortellini(Cheesse filling)<span>$15</span><i
-                                    class="fa-solid fa-leaf"></i></li>
-                            <li class="pasta-menu">Gnochi<span>$15</span><i class="fa-solid fa-leaf"></i></li>
-                            <li class="pasta-menu">Fettuccine alla Carbonara<span>$15</span></li>
-                            <li class="pasta-menu">Fettuccine Alfredo<span>$15</span><i class="fa-solid fa-leaf"></i>
+
+                            <li class="pasta-menu"><i class="fa-solid fa-leaf"></i>Penne in Tomato and
+                                Basil<span>$12</span> </li>
+                            <hr>
+
+                            <li class="pasta-menu"><i class="fa-solid fa-pepper-hot"></i><i
+                                    class="fa-solid fa-leaf"></i> Penne Arrabiata(Spicy tomato sauce)<span>$14</span>
                             </li>
-                            <li class="pasta-menu">Spaguetti in Olive Oil and Garlic Sauce<span>$12</span><i
-                                    class="fa-solid fa-leaf"></i></li>
+                            <hr>
+                            <li class="pasta-menu">Penne alla Vodka (Seved with bacon)<span>$15</span></li>
+                            <hr>
+                            <li class="pasta-menu">Rigatoni Bolognese (Meat sauce)<span>$15</span></li>
+                            <hr>
+                            <li class="pasta-menu">Spaguetti Bolognese<span>$15</span></li>
+                            <hr>
+                            <li class="pasta-menu">Ravioli(Meat filling)<span>$15</span></li>
+                            <hr>
+
+                            <li class="pasta-menu"><i class="fa-solid fa-leaf"></i> Tortellini (Cheesse
+                                filling)<span>$15</span></li>
+                            <hr>
+                            <li class="pasta-menu"><i class="fa-solid fa-leaf"></i> Gnochi<span>$15</span></li>
+                            <hr>
+                            <li class="pasta-menu">Fettuccine alla Carbonara<span>$15</span></li>
+                            <hr>
+
+                            <li class="pasta-menu"><i class="fa-solid fa-leaf"></i> Fettuccine Alfredo<span>$15</span>
+                            </li>
+                            <hr>
+
+                            <li class="pasta-menu"><i class="fa-solid fa-leaf"></i> Spaguetti in Olive Oil and Garlic
+                                Sauce<span>$12</span></li>
+                            <hr>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed btn-lg btn-block btn-dark bg-dark" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                        aria-controls="collapseThree">
+                    <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <i class="fa-solid fa-plus"></i> PIZZA
                     </button>
                 </h2>

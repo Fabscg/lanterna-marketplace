@@ -60,6 +60,8 @@ nav,
 
 .about-img {
     padding: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .about-text {
@@ -79,19 +81,25 @@ nav,
     background-color: #557B83;
 }
 
+
 .pasta-menu {
     list-style-type: none;
     font-size: 20px;
     color: white;
+    display: inline-table;
 }
 
 .accordion {
     cursor: pointer;
+    width: 100%;
+    padding: 100px auto;
+    text-align: center;
 }
 
 .accordion-button {
     background-color: black;
     text-align: center;
+
 }
 
 .accordion-collapse {
@@ -100,14 +108,13 @@ nav,
 
 li {
     list-style: none;
-    border-bottom: greenyellow solid 2px;
     font-size: 20px;
-    line-height: 50px;
 }
 
-em {
-    text-align: center;
+.salads {
+    display: block;
 }
+
 
 span {
     margin-left: 100px;
@@ -115,10 +122,21 @@ span {
 
 .additions {
     background-color: black;
-    text-align: center;
-    width: 400px;
+    margin: 100px;
+    padding: 10px;
+    border-radius: 50px 0 50px 0;
+    font-size: 20px;
+    width: 500px;
     display: block;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
 }
+
+em {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
 
 .btn-block,
 .card-body {
@@ -150,6 +168,7 @@ span {
 }
 
 footer {
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -160,4 +179,22 @@ footer {
 
 .fa-terminal {
     color: yellowgreen;
+}
+
+@media screen and (max-width:767px) {
+    .about-img {
+        width: 100%;
+    }
+
+    .additions {
+        padding: 10px;
+        border-radius: 50px 0 50px 0;
+        font-size: 20px;
+    }
+
+    em {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+    }
 }
