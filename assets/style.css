@@ -59,7 +59,7 @@ nav,
 }
 
 .about-img {
-    padding: 20px;
+    padding: 50px;
     max-width: 100%;
     height: auto;
 }
@@ -122,8 +122,8 @@ span {
 
 .additions {
     background-color: black;
-    margin: 100px;
-    padding: 10px;
+    margin: 20px auto;
+    padding: 30px;
     border-radius: 50px 0 50px 0;
     font-size: 20px;
     width: 500px;
@@ -186,6 +186,10 @@ footer {
         width: 100%;
     }
 
+    .about-text {
+        width: 100%;
+    }
+
     .additions {
         padding: 10px;
         border-radius: 50px 0 50px 0;
@@ -196,5 +200,9 @@ footer {
         display: flex;
         text-align: left;
         justify-content: space-between;
+    }
+
+    footer {
+        font-size: small;
     }
 }
