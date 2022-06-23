@@ -8,8 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-
     <script src="https://kit.fontawesome.com/e387ff95d3.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4cf7e7bf8a.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -26,31 +24,33 @@
     <nav id="menu" class="navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
-                <span class="navbar-brand page-scroll" href="#page-top"> <i class="fa-solid fa-pizza-slice"></i>
-                    Lanterna
-                    Restaurant & Marketplace</span>
-            </div>
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    <div class="navbar-header">
+                        <span class="navbar-brand page-scroll" href="#page-top"> <i class="fa-solid fa-pizza-slice"></i>
+                            Lanterna
+                            Restaurant & Marketplace</span>
+                    </div>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <div class="navbar-toggler-icon"></div>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                            <a class="nav-link" href="#menu">Menu</a>
-                            <a class="nav-link" href="#chefs">Chefs</a>
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#chefs">Chefs</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -133,10 +133,9 @@
                         <div class="additions">
                             <p>ADDITIONS</p>
                             <em>Grill Chicken <span>$4</span></em>
-                            <hr>
                             <em>Veal or Chicken Parmigiana<span>$7</span></em></p>
-                            <hr>
                         </div>
+
 
                     </div>
                 </div>
@@ -151,6 +150,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+
                         <ul>
 
                             <li class="pasta-menu"><i class="fa-solid fa-leaf"></i>Penne in Tomato and
@@ -199,6 +199,19 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <div class="extra-cheese-inquire">
+                            <h3>All our pizzas come with sauce and cheese.</h3><br>
+                            If you would like extra cheese is $2.00 and double chesse is $4.00 <br>
+                            <p>GLUTEN FREE and DAIRY FREE now available.</p><br>
+                            <p>Please inquire.</p><br>
+                            <h4>MEDIUM 14" (8 slices) <span>$15</span> </h4>
+                            <hr>
+                            <h4>LARGE 18"(8 slices) <span>$20</span> </h4>
+                            <hr>
+                        </div>
+
+
+
                         <ul>
                             <li><span></span></li>
                             <li><span></span></li>
@@ -214,8 +227,31 @@
 
     </section>
 
+
+
+    <div class="contact row">
+        <div class="map-info col-lg-6 col-md-6">
+            <img class="kid-cooking" src="assets/img/kid-cooking.jpg" alt="kid cooking">
+        </div>
+
+        <div class="map-info col-lg-6 col-md-6">
+            <p>We also do catering. If you are interested to have us for your event, give us a
+                call.
+            </p>
+            <a class="contact-info" href="mailto:text@gmail.com"><i
+                    class="icon fa-solid fa-envelope fa-2x"></i>test@gmail.com</a>
+            <a class="contact-info" href="tel:705 505-0088"><i class="icon fa-solid fa-phone fa-2x"></i>7055050088</a>
+        </div>
+        <div class="col-lg-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.8270777809184!2d-79.21066838255615!3d44.539173100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd55243ebadace1%3A0x24e9e98f487dc995!2sLanterna%20Restaurant%20%26%20Marketplace!5e0!3m2!1sen!2sca!4v1655925273276!5m2!1sen!2sca"
+                width="600" height="450" frameborder="0" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2022 Lanterna. All rights reserved. Designed by <a class="autor"
+        <p class="copyright">&copy; 2022 Lanterna. All rights reserved. Designed by <a class="autor"
                 href="https://i-am-fabi.herokuapp.com/" rel="nofollow"> <i class="fa-solid fa-terminal"></i> Fabiola C.
                 Gamboa</a></p>
     </footer>

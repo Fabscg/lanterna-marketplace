@@ -22,10 +22,15 @@ a {
     text-align: center;
 }
 
+p {
+    padding-bottom: 20px;
+}
+
+
 
 nav,
 .intro {
-    background: url("../assets/img/menu-bg.jpg") center top no-repeat fixed;
+    background: url("../assets/img/pasta-and-flour.jpg") center top no-repeat fixed;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -43,13 +48,23 @@ nav,
     font-size: 20px;
 }
 
-.navbar-nav,
+.nav-item,
 .nav-link {
     color: white;
     font-weight: 600px;
-    background-color: yellowgreen;
-    border-radius: 50px;
     justify-content: space-between;
+    transition-duration: 2s;
+    transition: width 2s;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item:hover {
+    background-color: yellowgreen;
+    border-radius: 15px;
+
 }
 
 .intro-text {
@@ -82,13 +97,6 @@ nav,
 }
 
 
-.pasta-menu {
-    list-style-type: none;
-    font-size: 20px;
-    color: white;
-    display: inline-table;
-}
-
 .accordion {
     cursor: pointer;
     width: 100%;
@@ -106,9 +114,12 @@ nav,
     background-color: #557B83;
 }
 
-li {
-    list-style: none;
+li,
+.pasta-menu {
     font-size: 20px;
+    list-style: decimal;
+    color: white;
+    display: inline-table;
 }
 
 .salads {
@@ -118,15 +129,15 @@ li {
 
 span {
     margin-left: 100px;
+    padding: 20px;
 }
 
 .additions {
     background-color: black;
     margin: 20px auto;
-    padding: 30px;
     border-radius: 50px 0 50px 0;
     font-size: 20px;
-    width: 500px;
+    width: 450px;
     display: block;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
 }
@@ -134,7 +145,8 @@ span {
 em {
     display: flex;
     text-align: left;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -157,7 +169,23 @@ em {
     color: greenyellow;
 }
 
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 3px solid yellowgreen;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
 /* ICONS */
+
+
+.icon {
+    color: white;
+    padding-right: 20px;
+}
 
 .fa-pepper-hot {
     color: red;
@@ -167,9 +195,53 @@ em {
     color: greenyellow;
 }
 
+/* PIZZAS */
+
+.extra-cheese-inquire {
+    text-align: center;
+    text-shadow: #557B83;
+}
+
+.contact {
+    display: grid;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.icon,
+.contact-info:hover {
+    color: yellowgreen;
+}
+
+.kid-cooking {
+    max-width: 400px;
+    height: auto;
+}
+
+iframe {
+    border-radius: 15px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.map-info {
+    padding: 30px;
+    margin: 10px;
+    display: grid;
+    text-align: center;
+    justify-content: space-between;
+}
+
 footer {
     margin-top: 100px;
     text-align: center;
+}
+
+.copyright {
+    padding-top: 20px;
 }
 
 .autor {
@@ -181,7 +253,21 @@ footer {
     color: yellowgreen;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:980px) {
+    .navbar-nav {
+        align-items: flex-end;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .intro {
+        background-size: cover;
+        width: 100%;
+    }
+
     .about-img {
         width: 100%;
     }
