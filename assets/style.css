@@ -288,6 +288,14 @@ iframe {
     text-align: right;
 }
 
+.marketplace {
+    font-size: 25px;
+    font-weight: 600px;
+    background: rgb(67, 230, 27);
+    background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(52, 233, 27, 0.02891578994879207) 52%, rgba(255, 11, 0, 1) 100%);
+    padding: 20px;
+}
+
 footer {
     margin-top: 100px;
     text-align: center;
