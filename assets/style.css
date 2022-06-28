@@ -5,10 +5,13 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #56A7A7;
-    /* background-color: #557B83; */
+    width: fit-content
+        /* background-color: #557B83; */
 }
 
 h1 {
@@ -24,7 +27,6 @@ a {
 }
 
 h5 {
-    font-weight: bold;
     padding: 20px;
 }
 
@@ -167,6 +169,17 @@ span {
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
+.all-pasta-adds {
+    color: yellowgreen;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.gluten-inquire {
+    font-size: large;
+    font-weight: 700;
+}
+
 em {
     display: flex;
     text-align: left;
@@ -223,9 +236,10 @@ em {
     text-shadow: #557B83;
 }
 
+
 /* SANDWICHES */
 .extra-toppings {
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .contact {
@@ -254,7 +268,7 @@ em {
     margin: 0 auto;
 }
 
-.kid-cooking h4 {
+.catering-event h4 {
     background-color: black;
     padding: 20px;
     font-weight: 600;
@@ -268,7 +282,7 @@ em {
     color: yellowgreen;
 }
 
-.kid-cooking {
+.catering-event {
     max-width: 100%;
     height: auto;
     padding: 20px;
@@ -293,7 +307,8 @@ iframe {
     font-weight: 600px;
     background: rgb(67, 230, 27);
     background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(52, 233, 27, 0.02891578994879207) 52%, rgba(255, 11, 0, 1) 100%);
-    padding: 20px;
+    padding: 10px;
+    width: max-content
 }
 
 footer {
@@ -315,14 +330,20 @@ footer {
 }
 
 @media screen and (max-width:980px) {
+
     .navbar-nav {
         align-items: flex-end;
     }
+
 }
 
 
 
 @media screen and (max-width:768px) {
+
+    .catering-event {
+        display: none;
+    }
 
     .intro {
         background-size: cover;

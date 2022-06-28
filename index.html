@@ -42,10 +42,16 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#menu">Menu</a>
+                                <a class="nav-link" href="#menu-food"><i class="fa-solid fa-bars"></i>
+                                    Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-us">Contact Us</a>
+                                <a class="nav-link" href="#location"><i class="fa-solid fa-location-dot"></i>
+                                    Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us"><i class="fa-solid fa-paper-plane"></i> Contact
+                                    Us</a>
                             </li>
                         </ul>
                     </div>
@@ -97,13 +103,13 @@
     </div>
 
 
-    <section id="#menu">
-        <h2>Menu</h2>
+    <section class="menu">
+        <h2 id="menu-food">Menu</h2>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingZero">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                        data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
                         <i class="fa-solid fa-plus"></i> APPETIZERS
                     </button>
                 </h2>
@@ -134,7 +140,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="salads btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <i class="fa-solid fa-plus"></i> SALADS
                     </button>
                 </h2>
@@ -159,8 +165,9 @@
                         <p>Sliced tomatoes topped with bocconcini cheese in a basil olive oil dressing</p>
                         <div class="additions">
                             <p>ADDITIONS</p>
-                            <em>Grill Chicken <span>$4</span></em>
-                            <em>Veal or Chicken Parmigiana<span>$7</span></em></p>
+                            <em><i class="fa-solid fa-angle-right"></i>Grill Chicken <span>$4</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>Veal or Chicken Parmigiana<span>$7</span></em>
+                            </p>
                         </div>
 
 
@@ -215,13 +222,14 @@
                         </ul>
                         <div class="additions">
                             <p>ADDITIONS TO YOUR PASTA</p>
-                            <em>GRILL CHICKEN BREAST<span>$4</span></em>
-                            <em>MEATBALL<span>$4</span></em>
-                            <em>SAUSAGE<span>$5</span></em>
-                            <em>SHRIMPS<span>$5</span></em>
-                            <em>VEAL or CHICKEN PARMIGIANA<span>$7</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>GRILL CHICKEN BREAST<span>$4</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>MEATBALL<span>$4</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>SAUSAGE<span>$5</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>SHRIMPS<span>$5</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>VEAL or CHICKEN PARMIGIANA<span>$7</span></em>
 
-                            <p>ALL OUR PASTAS ARE SERVED WITH FRESH GRATED PARMESAN CHEESE UNLESS OTHERWISE NOTED.</p>
+                            <p class="all-pasta-adds">ALL OUR PASTAS ARE SERVED WITH FRESH GRATED PARMESAN CHEESE UNLESS
+                                OTHERWISE NOTED.</p>
                         </div>
 
                     </div>
@@ -238,10 +246,13 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="extra-cheese-inquire">
-                            <h3>All our pizzas come with sauce and cheese.</h3><br>
-                            If you would like extra cheese is $2.00 and double chesse is $4.00 <br>
-                            <p>GLUTEN FREE and DAIRY FREE now available.</p><br>
-                            <p>Please inquire.</p><br>
+                            <div class="gluten-inquire">
+                                <h3>All our pizzas come with sauce and cheese.</h3><br>
+                                If you would like extra cheese is $2.00 and double chesse is $4.00 <br>
+                                <p>GLUTEN FREE and DAIRY FREE now available.</p><br>
+                                <p>Please inquire.</p>
+                            </div>
+                            <br>
                             <h5>MEDIUM 14" (8 slices) <span>$15</span> </h5>
                             <hr>
                             <h5>LARGE 18"(8 slices) <span>$20</span> </h5>
@@ -286,9 +297,9 @@
                         </ul>
                         <div class="additions">
                             <p>EXTRA TOPPINGS <span>$1ea</span></p>
-                            <em class="extra-toppings">Mushrooms</em>
-                            <em class="extra-toppings">Onion</em>
-                            <em class="extra-toppings">Sweet or Hot Peppers</em>
+                            <em class="extra-toppings"><i class="fa-solid fa-angle-right"></i>Mushrooms</em>
+                            <em class="extra-toppings"><i class="fa-solid fa-angle-right"></i>Onion</em>
+                            <em class="extra-toppings"><i class="fa-solid fa-angle-right"></i>Sweet or Hot Peppers</em>
                         </div>
                     </div>
                 </div>
@@ -325,19 +336,20 @@
 
 
 
-    <div class="contact row">
+    <div id="contact-us" class="contact row">
         <div class="map-info col-lg-6 col-md-6">
+            <h2>Contact Us</h2>
             <p>We also do catering. If you are interested to have us for your event, give us a
                 call.
             </p>
             <a class="contact-info" href="tel:705 505-0088"><i class="icon fa-solid fa-phone"></i>705-505-0088</a>
         </div>
         <div class="map-info col-lg-6 col-md-6">
-            <img class="kid-cooking" src="assets/img/kid-cooking.jpg" alt="kid cooking">
+            <img class="catering-event" src="assets/img/catering-event.jpg" alt="kid cooking">
         </div>
     </div>
     <div class="map">
-        <h4 class="our-location"><i class="fa-solid fa-location-dot"></i> OUR LOCATION</h4>
+        <h4 id="location" class="our-location"><i class="fa-solid fa-location-dot"></i> OUR LOCATION</h4>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.8270777809184!2d-79.21066838255615!3d44.539173100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd55243ebadace1%3A0x24e9e98f487dc995!2sLanterna%20Restaurant%20%26%20Marketplace!5e0!3m2!1sen!2sca!4v1655925273276!5m2!1sen!2sca"
             width="600" height="450" frameborder="0" allowfullscreen loading="lazy"
