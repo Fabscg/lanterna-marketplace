@@ -5,13 +5,11 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #56A7A7;
-    width: fit-content
-        /* background-color: #557B83; */
 }
 
 h1 {
@@ -44,12 +42,17 @@ p {
     transition: box-shadow .15s ease-in-out;
 }
 
-
+.navbar {
+    position: sticky;
+}
 
 nav,
 .intro {
-    background: url("../assets/img/pasta-and-flour.jpg") center top no-repeat fixed;
+    background: url("../assets/img/pasta-and-flour.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    background-position: center center;
     background-attachment: fixed;
     width: 100%;
     margin-top: 0;
@@ -299,7 +302,7 @@ iframe {
     padding: 30px;
     margin: 10px;
     font-size: xx-large;
-    text-align: right;
+    text-align: center;
 }
 
 .marketplace {
@@ -307,8 +310,10 @@ iframe {
     font-weight: 600px;
     background: rgb(67, 230, 27);
     background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(52, 233, 27, 0.02891578994879207) 52%, rgba(255, 11, 0, 1) 100%);
-    padding: 10px;
-    width: max-content
+    margin: 0 0 0 0;
+    padding: 10px 100px;
+    width: 100%;
+    text-align: center;
 }
 
 footer {
@@ -330,7 +335,6 @@ footer {
 }
 
 @media screen and (max-width:980px) {
-
     .navbar-nav {
         align-items: flex-end;
     }
@@ -340,6 +344,13 @@ footer {
 
 
 @media screen and (max-width:768px) {
+    .row>* {
+        flex-shrink: unset;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
 
     .catering-event {
         display: none;
@@ -368,6 +379,10 @@ footer {
         display: flex;
         text-align: left;
         justify-content: space-between;
+    }
+
+    .map-info {
+        text-align: center;
     }
 
     footer {
