@@ -385,6 +385,11 @@ footer {
         text-align: center;
     }
 
+    .marketplace {
+        width:max-content;
+        font-size: small;
+    }
+
     footer {
         font-size: small;
     }
