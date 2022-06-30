@@ -32,6 +32,13 @@ p {
     padding-bottom: 20px;
 }
 
+.contact-title,
+#menu-food,
+.our-restaurant {
+    font-family: 'Allura', cursive;
+    font-size: 75px;
+}
+
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -285,6 +292,7 @@ em {
     color: yellowgreen;
 }
 
+
 .catering-event {
     max-width: 100%;
     height: auto;
@@ -339,6 +347,10 @@ footer {
         align-items: flex-end;
     }
 
+    :root {
+        width: min-content;
+    }
+
 }
 
 
@@ -352,16 +364,15 @@ footer {
         margin-top: var(--bs-gutter-y);
     }
 
+    .our-restaurant {
+        justify-content: center;
+    }
+
     .contact {
         flex-wrap: wrap;
         width: 100%;
     }
 
-    #menu-food {
-        justify-content: space-between;
-        display: -webkit-inline-box;
-
-    }
 
     .catering-event {
         display: none;
@@ -399,6 +410,7 @@ footer {
         width: 100%;
         height: auto;
     }
+
 
     .map-info {
         text-align: center;
