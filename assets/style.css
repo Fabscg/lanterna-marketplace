@@ -352,6 +352,17 @@ footer {
         margin-top: var(--bs-gutter-y);
     }
 
+    .contact {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #menu-food {
+        justify-content: space-between;
+        display: -webkit-inline-box;
+
+    }
+
     .catering-event {
         display: none;
     }
@@ -381,12 +392,20 @@ footer {
         justify-content: space-between;
     }
 
+    .map,
+    .out-location {
+        display: inline-table;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
     .map-info {
         text-align: center;
     }
 
     .marketplace {
-        width:max-content;
+        width: max-content;
         font-size: small;
     }
 
