@@ -14,10 +14,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Lanterna</title>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&family=Montserrat:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -116,7 +118,7 @@
                 <h2 class="accordion-header" id="headingZero">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                        <i class="fa-solid fa-plus"></i> APPETIZERS
+                        <i class="plus-minus glyphicon glyphicon-plus"></i> APPETIZERS
                     </button>
                 </h2>
                 <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero"
@@ -135,7 +137,7 @@
                             <p>Crispy, deep fried balls of rice with mozzarella cheese filling and crunchy breadcrumb
                                 coating.</p>
                             <hr>
-                            <li>ANTIPASTO<span>small $8/large $15</span></li>
+                            <li>ANTIPASTO<span>small $8 | large $15</span></li>
                             <p>Olives, bocconcini cheese, prosciuto, cold grill vegetables; eggplant, zuccini, roasted
                                 red peppers and tomatoes.</p>
                             <hr>
@@ -147,26 +149,26 @@
                 <h2 class="accordion-header" id="headingOne">
                     <button class="salads btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <i class="fa-solid fa-plus"></i> SALADS
+                        <i class="icon-plus fa-solid fa-plus"></i> SALADS
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <li>House Salad<span>small $7/large $12</span></li>
+                        <li>House Salad<span>small $7 | large $12</span></li>
                         <hr>
                         <p>Letucce, tomatoes, cucumbers tossed with homemade italian balsamic dressing</p>
 
-                        <li>Ceasar Salad<span>small $7/large $12</span></li>
+                        <li>Ceasar Salad<span>small $7 | large $12</span></li>
                         <hr>
                         <p>Lettuce homemade croutons and parmigiano cheese</p>
 
-                        <li>Greek Salad<span>small $10/large $15</span></li>
+                        <li>Greek Salad<span>small $10 | large $15</span></li>
                         <hr>
                         <p>Lettuce, tomatoes, cucumber, onions, olives, feta cheese with oregano tossed in olive oil &
                             balsamic vinegar dressing.</p>
 
-                        <li>Caprese Salad<span>small $10/large $17</span></li>
+                        <li>Caprese Salad<span>small $10 | large $17</span></li>
                         <hr>
                         <p>Sliced tomatoes topped with bocconcini cheese in a basil olive oil dressing</p>
                         <div class="additions">
@@ -184,7 +186,7 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="fa-solid fa-plus"></i> PASTA
+                        <i class="icon-plus fa-solid fa-plus"></i> PASTA
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -245,7 +247,7 @@
                 <h2 class="accordion-header" id="headingThree">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fa-solid fa-plus"></i> PIZZA
+                        <i class="icon-plus fa-solid fa-plus"></i> PIZZA
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -283,7 +285,7 @@
                 <h2 class="accordion-header" id="headingFour">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <i class="fa-solid fa-plus"></i> SANDWICHES
+                        <i class="icon-plus fa-solid fa-plus"></i> SANDWICHES
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -314,7 +316,7 @@
                 <h2 class="accordion-header" id="headingThree">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fa-solid fa-plus"></i> SEAFOOD
+                        <i class="icon-plus fa-solid fa-plus"></i> SEAFOOD
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -370,6 +372,8 @@
                 href="https://i-am-fabi.herokuapp.com/" rel="nofollow"> <i class="fa-solid fa-terminal"></i> Fabiola C.
                 Gamboa</a></p>
     </footer>
+
 </body>
+<script src="/index.js"></script>
 
 </html>

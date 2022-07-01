@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -142,7 +144,6 @@ nav,
 .accordion-button {
     background-color: black;
     text-align: center;
-
 }
 
 .accordion-collapse {
@@ -158,10 +159,6 @@ li,
 }
 
 /* SALADS */
-
-.salads {
-    display: block;
-}
 
 
 span {
@@ -197,8 +194,6 @@ em {
     align-items: center;
 }
 
-
-.btn-block,
 .card-body {
     color: white;
     text-decoration: none;
@@ -348,8 +343,9 @@ footer {
     }
 
     :root {
-        width: min-content;
+        width: fit-content;
     }
+
 
 }
 
@@ -363,6 +359,7 @@ footer {
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-top: var(--bs-gutter-y);
     }
+
 
     .our-restaurant {
         justify-content: center;
