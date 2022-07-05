@@ -98,10 +98,12 @@ nav,
 
 }
 
+
 .intro-text {
     font-size: 32px;
     font-weight: 400;
     text-align: center;
+    text-shadow: 5px 5px 4px black;
 }
 
 .about-img {
@@ -126,13 +128,19 @@ nav,
     padding: 20px auto;
 }
 
-/* SECTION MENU */
 
+/* SECTION MENU */
 
 .accordion {
     background-color: #557B83;
 }
 
+.btn-dark {
+    background-color: #1c1f23;
+    border-color: #1a1e21;
+    box-shadow: none;
+    width: 100%;
+}
 
 .accordion {
     cursor: pointer;
