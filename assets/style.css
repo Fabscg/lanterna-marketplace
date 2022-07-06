@@ -51,9 +51,6 @@ p {
     transition: box-shadow .15s ease-in-out;
 }
 
-.navbar {
-    position: sticky;
-}
 
 nav,
 .intro {
@@ -95,7 +92,6 @@ nav,
     background-color: yellowgreen;
     border-radius: 25px;
     font-weight: 600;
-
 }
 
 
@@ -111,6 +107,7 @@ nav,
     width: 100%;
     height: auto;
     align-items: center;
+    border-radius: 50px;
 }
 
 .about-text {
@@ -177,11 +174,12 @@ span {
 .additions {
     background-color: black;
     margin: 20px auto;
-    border-radius: 50px 0 50px 0;
+    border-radius: 50px 50px 50px 50px;
     font-size: 20px;
     width: 450px;
     display: block;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
 }
 
 .all-pasta-adds {
@@ -259,6 +257,7 @@ em {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    margin-top: 50px;
 }
 
 .contact-info {
@@ -268,6 +267,7 @@ em {
 
 .map {
     text-align: center;
+    margin-top: 50px;
 }
 
 .our-location {
@@ -300,6 +300,7 @@ em {
     max-width: 100%;
     height: auto;
     padding: 20px;
+    border-radius: 50px;
 }
 
 iframe {
@@ -320,11 +321,12 @@ iframe {
     font-size: 25px;
     font-weight: 600px;
     background: rgb(67, 230, 27);
-    background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(52, 233, 27, 0.02891578994879207) 52%, rgba(255, 11, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(27, 233, 116, 0.02891578994879207) 33%, rgba(247, 248, 245, 1) 49%, rgba(245, 45, 24, 1) 69%, rgba(255, 11, 0, 1) 100%);
     margin: 0 0 0 0;
     padding: 10px 100px;
     width: 100%;
     text-align: center;
+    text-shadow: 5px 5px 4px black;
 }
 
 footer {
@@ -334,6 +336,7 @@ footer {
 
 .copyright {
     padding-top: 20px;
+    margin-top: 100px;
 }
 
 .autor {
