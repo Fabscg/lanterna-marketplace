@@ -308,6 +308,27 @@ iframe {
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
+.schedule {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.openingHours-title {
+    padding-bottom: 30px;
+}
+
+.closed {
+    background-color: yellowgreen;
+    border-radius: 50px;
+}
+
+.opening-hours {
+    text-align: center;
+    padding: 100px;
+}
+
 
 
 .map-info {
@@ -402,7 +423,7 @@ footer {
 
     .additions {
         padding: 10px;
-        border-radius: 50px 0 50px 0;
+
         font-size: 20px;
     }
 
@@ -427,10 +448,9 @@ footer {
 
     .marketplace {
         width: max-content;
-        font-size: small;
     }
 
     footer {
-        font-size: small;
+        font-size: medium;
     }
 }
