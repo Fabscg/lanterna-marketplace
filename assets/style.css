@@ -387,6 +387,10 @@ footer {
 
 @media screen and (max-width:768px) {
 
+    .navbar {
+        font-size: 30px;
+    }
+
     .body {
         text-align: -webkit-center;
     }
