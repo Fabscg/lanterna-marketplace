@@ -34,6 +34,7 @@ p {
     padding-bottom: 20px;
 }
 
+.openingHours-title,
 .contact-title,
 #menu-food,
 .our-restaurant {
@@ -327,6 +328,7 @@ iframe {
 .opening-hours {
     text-align: center;
     padding: 100px;
+
 }
 
 
@@ -384,13 +386,18 @@ footer {
 
 
 @media screen and (max-width:768px) {
-    .row>* {
+
+    .body {
+        text-align: -webkit-center;
+    }
+
+    /* .row>* {
         flex-shrink: unset;
         width: 100%;
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-top: var(--bs-gutter-y);
-    }
+    } */
 
 
     .our-restaurant {
@@ -417,8 +424,13 @@ footer {
     }
 
     .about-text {
+        text-align: center;
         width: 100%;
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .accordion {
+        font-size: 30px;
     }
 
     .additions {
