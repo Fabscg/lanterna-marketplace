@@ -53,6 +53,6 @@
 
   ## ![alt text](assets/img/Lanterna-restaurant.png)
 
-  ## ![alt text](assets/img/mobile-img.png)
+  ## ![alt text](assets/img/mobile-app.png)
 
   
