@@ -188,6 +188,7 @@ span {
     color: yellowgreen;
     padding: 20px;
     font-weight: 700;
+    width: auto;
 }
 
 .gluten-inquire {
@@ -373,15 +374,25 @@ footer {
 }
 
 @media screen and (max-width:980px) {
+
+    p {
+        width: 500px;
+        text-align: center;
+        display: inline-flex;
+    }
+
     .navbar-nav {
         align-items: flex-end;
+    }
+
+    .about-text,
+    .about-img {
+        width: 100%;
     }
 
     :root {
         width: fit-content;
     }
-
-
 }
 
 
@@ -465,6 +476,10 @@ footer {
 
     .marketplace {
         width: max-content;
+    }
+
+    .copyright {
+        display: inline-block;
     }
 
     footer {
