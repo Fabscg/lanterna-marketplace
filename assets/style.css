@@ -34,6 +34,7 @@ p {
     padding-bottom: 20px;
 }
 
+.all-our-pizzas,
 .openingHours-title,
 .contact-title,
 #menu-food,
@@ -399,6 +400,10 @@ footer {
 
 @media screen and (max-width:768px) {
 
+    li {
+        font-size: 30px;
+    }
+
     .navbar {
         font-size: 30px;
     }
@@ -442,11 +447,11 @@ footer {
     .about-text {
         text-align: center;
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .accordion {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .additions {
