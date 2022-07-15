@@ -384,8 +384,18 @@ footer {
 
 /* SPECIALS */
 
+.special-body {
+    background: url("../assets/img/specials-background.jpeg");
+    background-size: cover;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.second-page,
+.special-intro,
 #specials {
     background-color: black;
+    padding-top: 40px;
 }
 
 
