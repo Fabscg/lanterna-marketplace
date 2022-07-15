@@ -44,7 +44,7 @@ p {
 }
 
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
+    /* padding: 0.25rem 0.75rem; */
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
@@ -74,26 +74,28 @@ nav,
 .navbar-nav,
 .nav-link:hover {
     color: black;
-    font-size: 20px;
 }
 
 .nav-item,
 .nav-link {
     color: white;
     font-weight: 600px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     transition-duration: 2s;
     transition: width 2s;
+
 }
 
 .nav-item {
-    margin-left: 20px;
+    margin-left: 5px;
+    text-shadow: 5px 5px 4px black;
 }
 
 .nav-item:hover {
     background-color: yellowgreen;
     border-radius: 25px;
     font-weight: 600;
+    text-shadow: none;
 }
 
 
@@ -350,19 +352,19 @@ iframe {
     background: linear-gradient(90deg, rgba(67, 230, 27, 1) 0%, rgba(27, 233, 116, 0.02891578994879207) 33%, rgba(247, 248, 245, 1) 49%, rgba(245, 45, 24, 1) 69%, rgba(255, 11, 0, 1) 100%);
     margin: 0 0 0 0;
     padding: 10px 100px;
-    width: 100%;
     text-align: center;
-    text-shadow: 5px 5px 4px black;
+    color: black;
+    width: 100%;
+    /* text-shadow: 5px 5px 4px black; */
 }
 
 footer {
-    margin-top: 100px;
     text-align: center;
 }
 
 .copyright {
     padding-top: 20px;
-    margin-top: 100px;
+    /* margin-top: 20px; */
 }
 
 .autor {
@@ -374,6 +376,23 @@ footer {
     color: yellowgreen;
 }
 
+.second-footer {
+    background-color: black;
+    margin: 0;
+    position: relative;
+}
+
+/* SPECIALS */
+
+#specials {
+    background-color: black;
+}
+
+
+.title-specials {
+    font-family: 'Allura', cursive;
+}
+
 @media screen and (max-width:980px) {
 
     p {
@@ -382,6 +401,7 @@ footer {
         display: inline-flex;
     }
 
+    #specials,
     .navbar-nav {
         align-items: flex-end;
     }
@@ -391,35 +411,32 @@ footer {
         width: 100%;
     }
 
-    :root {
-        width: fit-content;
+    .specials {
+        width: 100%;
+        background-color: black;
     }
+
+    .second-footer {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
 }
 
 
 
 @media screen and (max-width:768px) {
-
-    li {
-        font-size: 30px;
+    :root {
+        width: fit-content;
     }
 
-    .navbar {
+    li {
         font-size: 30px;
     }
 
     .body {
         text-align: -webkit-center;
     }
-
-    /* .row>* {
-        flex-shrink: unset;
-        width: 100%;
-        padding-right: calc(var(--bs-gutter-x) * .5);
-        padding-left: calc(var(--bs-gutter-x) * .5);
-        margin-top: var(--bs-gutter-y);
-    } */
-
 
     .our-restaurant {
         justify-content: center;
@@ -480,7 +497,8 @@ footer {
     }
 
     .marketplace {
-        width: max-content;
+        width: 100%;
+        height: auto;
     }
 
     .copyright {
@@ -489,5 +507,12 @@ footer {
 
     footer {
         font-size: medium;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .intro {
+        width: 100%;
     }
 }
