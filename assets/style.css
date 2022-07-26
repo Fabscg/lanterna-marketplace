@@ -355,6 +355,7 @@ iframe {
     padding: 10px 100px;
     text-align: center;
     color: black;
+    font-weight: bold;
     width: 100%;
     /* text-shadow: 5px 5px 4px black; */
 }
@@ -404,12 +405,24 @@ footer {
 #specials {
     background: url("../assets/img/specials-background.jpeg");
     background-position: center;
-    background-size: cover cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     margin-top: 120px;
+    height: 100%;
 }
 
 .title-specials {
     font-family: 'Allura', cursive;
+}
+
+.food-icon-group {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-icons {
+    padding: 20px;
 }
 
 .notice {
@@ -421,12 +434,14 @@ footer {
     padding: 30px;
     text-align: center;
     height: fit-content;
-    margin-top: 100px;
+    margin: 50px auto;
+    width: 500px;
 }
 
 .notice-body {
     width: 100%;
     font-size: medium;
+    border-radius: 50px;
 }
 
 
