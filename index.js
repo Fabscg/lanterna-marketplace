@@ -1,5 +1,5 @@
+// Description: This file contains the javascript for the index page
 $(document).ready(function () {
-    // Add minus icon for collapse element which is open by default
     $(".collapse.show").each(function () {
         $(this)
             .prev(".accordion-header")

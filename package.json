@@ -4,8 +4,14 @@
   "description": "italian-restaurant",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
+    "start": "firebase server --only hosting",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  {
+    "hosting": {
+      "site": "lanterna-italian",
+      "public": "public"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,7 +26,7 @@
   "homepage": "https://github.com/Fabscg/lanterna-marketplace#readme",
   "dependencies": {
     "bootstrap": "^3.4.1",
-    "nodemon": "^2.0.16"
-  },
-  "devDependencies": {}
+    "firebase": "^10.6.0",
+    "nodemon": "^3.0.1"
+  }
 }
