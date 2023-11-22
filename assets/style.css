@@ -33,6 +33,15 @@ h5 {
 p {
     padding-bottom: 20px;
 }
+#navbar_top{
+    position:fixed;
+    box-shadow: 0px 4px 7px #656565;
+}
+.nav {
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
 
 .all-our-pizzas,
 .openingHours-title,
@@ -453,7 +462,6 @@ footer {
 
 @media screen and (max-width:980px) {
 
-
     p {
         width: 500px;
         text-align: center;
@@ -471,8 +479,17 @@ footer {
     }
 
     .specials {
-        width: 100%;
+        background-attachment: cover;
+        align-items: center;
+        justify-content: center;
+        display: grid;
         background-color: black;
+        position: fixed;
+    }
+    .food-icon-group {
+        display:flex;
+        height: 100% !important;
+        width: 100% !important;
     }
 
     .second-footer {
@@ -550,7 +567,6 @@ footer {
         height: auto;
     }
 
-
     .map-info {
         text-align: center;
     }
@@ -570,7 +586,9 @@ footer {
 }
 
 @media screen and (max-width:560px) {
-
+    #navbar_top{
+        position: fixed !important;
+    }
     .intro {
         width: 100%;
     }
