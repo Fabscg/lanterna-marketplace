@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "lanterna-italian.web.app",
+    "lanterna-italian": {
+      "projectId": "lanterna-italian",
+      "databaseURL": "https://lanterna-italian.firebaseio.com",
+      "storageBucket": "lanterna-italian.appspot.com",
+      "apiKey": "AIzaSyB-5QZ4Z5QZ4Z5QZ4Z5QZ4Z5QZ4Z5QZ4Z5",
+      "authDomain": "lanterna-italian.firebaseapp.com",
+      "messagingSenderId": "123456789"
+    }
+  }
+}
