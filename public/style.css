@@ -65,7 +65,7 @@ p {
 
 nav,
 .intro {
-    background: url("../assets/img/pasta-and-flour.jpg");
+    background: url("/public/assets/img/Lanterna-restaurant.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -412,7 +412,7 @@ footer {
 }
 
 #specials {
-    background: url("../assets/img/specials-background.jpeg");
+    background: url("/public/assets/img/specials-background.jpeg");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
