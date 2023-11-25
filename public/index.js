@@ -38,10 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // remove padding top from body
             document.body.style.paddingTop = '0';
         }
-        window.onscroll = () => {
-            const nav = document.querySelector('#navbar_top');
-            if(this.scrollY <= 500) nav.className = ''; else nav.className = 'scroll';
-          };
     });
 });
 
