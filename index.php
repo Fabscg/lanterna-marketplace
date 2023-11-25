@@ -1,1 +1,1 @@
-<?php header( 'Location: /public/assets/index.html' ) ;  ?>
+<?php header( 'Location: index.html' ) ;  ?>
