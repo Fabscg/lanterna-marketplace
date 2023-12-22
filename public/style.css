@@ -311,9 +311,10 @@ em {
 
 .schedule{
     padding:30px auto 30px auto !important;
-    display: block;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 25px;
 }
 .d-block{
     object-fit: cover;
@@ -325,8 +326,6 @@ em {
 
 .openingHours-title {
     padding-bottom: 30px;
-    display:table!important;
-
 }
 
 .closed {
@@ -337,7 +336,7 @@ em {
 .holiday-hours{
     padding: 20px;
     margin: 20px auto;
-    width: 500px;
+    width: 100%;
     text-align: center;
 }
 
