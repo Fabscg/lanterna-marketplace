@@ -37,6 +37,11 @@ p {
     font-size: 20px;
     padding-bottom: 20px;
 }
+th{
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: space-between;
+}
 
 #navbar_top{
     position:fixed;
@@ -332,7 +337,8 @@ em {
 .holiday-hours{
     padding: 20px;
     margin: 20px auto;
-    width: 300px;
+    width: 500px;
+    text-align: center;
 }
 
 .opening-hours {
