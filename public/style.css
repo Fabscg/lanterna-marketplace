@@ -168,9 +168,13 @@ nav,
 
 /* SECTION MENU */
 .specials-button{
+    padding:30px auto;
+    margin:30px auto;
+    justify-content: center;
+    align-items: center;
     width:500px;
-    height: 30px;
-    margin:30px auto;    
+    height: 30px; 
+    display:flex;
 }
 .btn-block {
     background-color: #1c1f23;
@@ -435,6 +439,13 @@ footer {
     background-repeat: no-repeat;
     margin-top: 120px;
     height: 100%;
+}
+.specials-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin:30px auto !important;  
+    padding: 30px auto; 
 }
 
 .title-specials {
