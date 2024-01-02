@@ -357,7 +357,6 @@ em {
 iframe{
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 
@@ -533,9 +532,6 @@ footer {
 
 
 @media screen and (max-width:768px) {
-    body{
-        width: 100%;
-    }
     :root {
         width: fit-content;
     }
