@@ -11,8 +11,9 @@ td{
 tr{
     padding-top:50px;
 }
-
+html,
 body {
+    overflow-x:hidden;
     margin: 0 !important;
     padding: 0 !important;
     font-family: 'Montserrat', sans-serif;
@@ -130,13 +131,6 @@ nav,
     text-shadow: 5px 5px 4px black;
 }
 
-.about-img {
-    padding: 30px;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    border-radius: 50px;
-}
 #location{
     display: flex!important;
     padding: 20px;
@@ -147,12 +141,14 @@ nav,
 }
 
 .about-text {
+    text-align: center;
     padding: 40px;
     margin: 20px auto; 
     background-color: black;
     opacity: 0.5;
-    border-radius: 280px;
-    width: 500px;
+    border-radius: 280px !important;
+    max-width: 500px;
+    height:auto;
     display:block;
     justify-content: center!important;
 }
@@ -357,6 +353,7 @@ em {
 iframe{
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
@@ -492,20 +489,22 @@ footer {
 }
 
 @media screen and (max-width:980px) {
-
-    p {
-        width: 500px;
-        text-align: center;
-    }
-
     #specials,
     .navbar-nav {
         align-items: center;
     }
+    .about-text {
+        width:fit-content;
+        text-align: center;
+        opacity: 0.5;
+        align-items: center;
+        justify-content: center!important;
+    }
 
-    .about-text,
-    .about-img {
-        width: 100%;
+    #about-text{
+        text-align: center;
+        background-color: black;
+        opacity: 0.5;
     }
 
     .specials {
@@ -548,10 +547,6 @@ footer {
         justify-content: center;
     }
 
-    .about-img {
-        width: 100%;
-    }
-
     .about-text {
         text-align: center!important;
         width: 100%;
@@ -591,6 +586,27 @@ footer {
 }
 
 @media screen and (max-width:560px) {
+    .intro {
+        background: url("assets/img/pasta-and-flour.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        background-position: center center;
+        width: full-width;
+        margin-top: 0;
+       }
+       .navbar{
+        background-image: none;
+        background-color:black;
+        opacity: 0.9;
+        color:white;
+        position: static;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+       }
       #location{
         flex-wrap: wrap;
         display:block!important;
@@ -599,11 +615,5 @@ footer {
         height: auto;
         justify-content: center!important;
         align-items: center;
-    }
-    #navbar_top{
-        position: fixed !important;
-    }
-    .intro {
-        width: 100%;
     }
 }
