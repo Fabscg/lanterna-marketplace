@@ -453,6 +453,14 @@ footer {
     padding: 30px auto; 
 }
 
+.our-specials{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 50px;
+    width:500px;
+    height: 200px;
+    text-align: center;
+}
 .title-specials {
     font-family: 'Allura', cursive;
 }
