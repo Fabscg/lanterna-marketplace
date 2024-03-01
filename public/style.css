@@ -57,7 +57,6 @@ th{
     z-index: 1;
 }
 
-.all-our-pizzas,
 .openingHours-title,
 .contact-title,
 #menu-food,
@@ -199,12 +198,10 @@ nav,
     background-color: #60A9A6;
 }
 
-li,
-.pasta-menu {
+tr
+{
     font-size: 20px;
-    list-style: decimal;
     color: white;
-    display: inline-table;
 }
 
 /* SALADS */
@@ -218,12 +215,16 @@ span {
 .additions {
     background-color: black;
     margin: 20px auto;
-    border-radius: 50px 50px 50px 50px;
-    font-size: 20px;
-    width: 450px;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 10px;
+    width: 500px;
     display: block;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
+    padding: 20px 20px;
+}
+li,
+.appetizers{
+    list-style-type: none;
 }
 
 .all-pasta-adds {
@@ -575,7 +576,6 @@ footer {
 
     .additions {
         padding: 10px;
-
         font-size: 20px;
     }
 
