@@ -444,6 +444,7 @@ footer {
     margin-top: 120px;
     height: 100%;
     z-index:-2;
+    position: sticky;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -454,14 +455,6 @@ footer {
     padding: 30px auto; 
 }
 
-.our-specials{
-    background-color: black;
-    opacity: 0.7;
-    border-radius: 50px;
-    width:500px;
-    height: 200px;
-    text-align: center;
-}
 .title-specials {
     font-family: 'Allura', cursive;
 }
@@ -619,6 +612,15 @@ footer {
 @media screen and (max-width:560px) {
     .intro {
         background: url("assets/img/pasta-and-flour.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        background-position: center center;
+        width: full-width;
+        margin-top: 0;
+       }
+
+       #specials{
         background-size: cover;
         background-repeat: no-repeat;
         height: auto;
