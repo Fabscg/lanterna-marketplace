@@ -437,14 +437,15 @@ footer {
 }
 
 #specials {
-    background: url("assets/img/tomatoes.jpeg");
-    background-position: center;
+    background-image: url("assets/img/tomatoes.jpeg");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 120px;
-    height: 100%;
+    height: auto;
+    width: 100%;
     z-index:-2;
-    position: sticky;
+    background-attachment: fixed;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
