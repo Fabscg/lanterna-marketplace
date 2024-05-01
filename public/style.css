@@ -515,7 +515,14 @@ footer {
 }
 
 @media screen and (max-width:980px) {
-    #specials,
+    #specials {
+        background: url("assets/img/tomatoes.jpeg");
+        background-repeat: no-repeat;
+        margin: 0;
+        background-position: center ;
+        max-height: fit-content;
+        margin-top: 0;
+    }
     .navbar-nav {
         align-items: center;
     }
@@ -548,7 +555,9 @@ footer {
     }
 
     .second-footer {
-        margin-bottom: 0;
+        position: absolute;
+        width:100%;
+        bottom: 0;
         padding-bottom: 0;
     }
 
@@ -649,5 +658,11 @@ footer {
         height: auto;
         justify-content: center!important;
         align-items: center;
+    }
+    .second-footer {
+        position: absolute;
+        min-width:100% !important;
+        bottom: 0;
+        padding-bottom: 0;
     }
 }
