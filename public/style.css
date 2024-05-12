@@ -397,6 +397,8 @@ footer {
 
 .copyright {
     padding-top: 20px;
+    background-color: black;
+    height:max-content;
     /* margin-top: 20px; */
 }
 
