@@ -473,9 +473,14 @@ footer {
 }
 
 .notice {
+    color:white;
     display: block;
     justify-content: center;
-    background-color: rgb(95, 29, 236);
+    background-color: red;
+    padding: 10px;
+    padding: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica bold, sans-serif;
     border: 4px black solid;
     border-radius: 50px;
     padding: 30px;
@@ -486,8 +491,10 @@ footer {
 }
 
 .notice-body {
+    color:white;
     width: 100%;
-    font-size: medium;
+    font-size: large;
+    font-weight: 700px!important;
     border-radius: 50px;
 }
 .info-container{
@@ -511,6 +518,8 @@ footer {
 }
 
 .heart {
+    font-weight: 800;
+    color:white;
     justify-content: center;
     align-items: center;
     padding: 20px;
