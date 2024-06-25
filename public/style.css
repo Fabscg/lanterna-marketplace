@@ -404,7 +404,10 @@ footer {
 
 .autor {
     text-decoration: none;
-    color: white;
+    color: rgb(167, 169, 172);
+}
+.autor:hover{
+    color: yellowgreen;
 }
 
 .fa-terminal {
@@ -614,6 +617,7 @@ footer {
 
     .copyright {
         display: grid;
+        font-size: 10px!important;
     }
 
     footer {
