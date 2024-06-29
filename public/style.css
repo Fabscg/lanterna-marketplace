@@ -511,6 +511,7 @@ footer {
 }
 
 .img-fluid{
+    align-items: center!important;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
 }
 .easter-info{
