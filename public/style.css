@@ -68,6 +68,7 @@ th{
 }
 
 .navbar-toggler {
+    display:contents;
     /* padding: 0.25rem 0.75rem; */
     font-size: 1.25rem;
     line-height: 1;
@@ -392,14 +393,16 @@ iframe{
 }
 
 footer {
+    color:gray;
     text-align: center;
 }
 
 .copyright {
+    margin:0;
     padding-top: 20px;
+    padding-bottom:20px;
     background-color: black;
     height:max-content;
-    /* margin-top: 20px; */
 }
 
 .autor {
@@ -414,16 +417,14 @@ footer {
     color: yellowgreen;
 }
 
-
 /* SPECIALS */
 .second-page,
 .special-body {
-    background-size: cover;
     margin-bottom: 0;
     font-size: x-large;
     padding: 20px;
     text-align: center;
-    height: 100%;;
+    height: 100%;
 }
 
 .special-body {
@@ -433,12 +434,20 @@ footer {
 
 
 .second-footer {
+    color:gray;
     background-color: black;
     margin-bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 .nav-specials {
-    background: none;
+    background: black;
+    opacity:0.9;
+    width: 100%;
+    position:fixed;
+    margin-top:0;
+    box-shadow: 0px 4px 7px #dfdddd;
 }
 
 #specials {
@@ -446,11 +455,13 @@ footer {
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    margin-top: 120px;
     height: 100%;
-    z-index:-2;
-    position:relative;
-    background-attachment: fixed;
+    z-index:-4;
+    position:-webkit-sticky;
+    background-attachment: absolute;
+}
+.special-title{
+    padding-top: 100px;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -460,7 +471,6 @@ footer {
     margin:30px auto !important;  
     padding: 30px auto; 
 }
-
 .title-specials {
     font-family: 'Allura', cursive;
 }
@@ -552,7 +562,6 @@ footer {
         background-attachment: cover;
         align-items: center;
         justify-content: center;
-        display: grid;
         background-color: black;
         position: fixed;
     }
@@ -563,8 +572,7 @@ footer {
     }
 
     .second-footer {
-        margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
 }
@@ -580,8 +588,11 @@ footer {
         font-size: 30px;
     }
 
-    .body {
+    #body {
         text-align: -webkit-center;
+        position:relative;
+        width:100%;
+        min-height: 100vh;
     }
 
     .our-restaurant {
@@ -617,12 +628,12 @@ footer {
     }
 
     .copyright {
-        display: grid;
         font-size: 10px!important;
     }
 
     footer {
         font-size: medium;
+        padding-bottom: 20px;
     }
 }
 
@@ -640,6 +651,7 @@ footer {
        #specials{
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: sticky;
         height: auto;
         background-position: center center;
         width: full-width;
