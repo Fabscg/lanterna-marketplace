@@ -313,9 +313,15 @@ em {
 .contact-info:hover {
     color: yellowgreen;
 }
-
+.timeline{
+    border-radius: 20px 20px 20px 20px;
+    padding:20px;
+    background-color: black;
+    opacity: 0.6;
+}
 
 .schedule{
+    color:white;
     padding: 0 20px!important;
     display: flex;
     align-items: center;
