@@ -313,14 +313,21 @@ em {
 .contact-info:hover {
     color: yellowgreen;
 }
-
+.timeline{
+    border-radius: 20px 20px 20px 20px;
+    padding:20px;
+    background-color: black;
+    opacity: 0.6;
+}
 
 .schedule{
-    padding:40px auto!important;
+    color:white;
+    padding: 0 20px!important;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     font-size: 25px;
+    margin-bottom: 5px;
+    justify-content: space-between;
 }
 .d-block{
     object-fit: cover;
@@ -334,23 +341,37 @@ em {
     padding-bottom: 30px;
 }
 
-.closed {
-    background-color: yellowgreen;
-    border-radius: 50px;
-}
-
-.holiday-hours{
-    padding: 20px;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-
 .opening-hours {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0 100px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  top:20px;
+  background-color: white;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-success{
+    background-color: yellowgreen;
+}
+.closed{
+    background-color: red;
+}
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background-color: white;
+  transform: translateX(-50%);
 }
 
 iframe{
