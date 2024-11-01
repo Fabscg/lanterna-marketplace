@@ -134,6 +134,7 @@ th{
 }
 
 #location{
+    flex-direction: column !important;
     display: flex!important;
     padding: 20px;
     width: 100%;
@@ -630,7 +631,7 @@ footer {
     .opening-hours {
         text-align: center;
     }
-
+ 
     .accordion {
         font-size: 25px;
     }
@@ -693,11 +694,10 @@ footer {
     }
 }
       #location{
-        flex-wrap: wrap;
         display:block!important;
         padding: 20px;
         width:100%;
         height: auto;
         justify-content: center!important;
-        align-items: center;
+        align-items: center!important;
     }
