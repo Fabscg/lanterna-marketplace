@@ -48,13 +48,16 @@ th{
 }
 
 #navbar_top{
-    position:fixed;
+    background-color: black;
+    opacity:0.8;
     box-shadow: 0px 4px 7px #656565;
+    color:white !important;
 }
 .nav {
     background-color: black;
     position: fixed;
     z-index: 1;
+    width:100%;
 }
 
 .openingHours-title,
@@ -78,17 +81,17 @@ th{
     transition: box-shadow .15s ease-in-out;
 }
 
-nav,
 .intro {
     background: url("assets/img/pasta-and-flour.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height: 500px !important;
     background-position: center center;
     background-attachment: fixed;
-    width: 100%;
     margin-top: 0;
     padding: 120px 0 80px 0;
+    height: auto;
+    width: full-width;
 }
 
 .navbar-brand {
@@ -104,7 +107,6 @@ nav,
 .nav-link {
     color: white;
     font-weight: 600px;
-    /* justify-content: space-between; */
     transition-duration: 2s;
     transition: width 2s;
 
@@ -141,27 +143,24 @@ nav,
 }
 
 .about-text {
-    text-align: center;
-    padding: 40px;
-    margin: 20px auto; 
-    background-color: black;
-    opacity: 0.5;
-    border-radius: 280px !important;
-    max-width: 500px;
-    height:auto;
+    min-width: 600px;
+    height:500px;
     display:block;
     justify-content: center!important;
 }
 
 .our-restaurant {
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container-restaurant {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px auto;
+    justify-content:center;
+    display:flex;
+    width:600px;text-align: center;
 }
 
 
@@ -299,6 +298,12 @@ em {
     justify-content: flex-end;
     font-size: 20px;
 }
+.contact-us{
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+}
 
 .card h4 {
     width:100%;
@@ -346,6 +351,7 @@ em {
     margin: 0 auto;
     position: relative;
     padding: 10px 0 100px;
+    color:white !important;
 }
 
 .timeline-dot {
@@ -387,16 +393,6 @@ iframe{
     margin: 10px auto;
     font-size: xx-large;
     text-align: center;
-}
-
-.address{
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    opacity: 0.7;
-    width:fit-content;
-    padding:20px;
-    border-radius: 15px;
-    margin: 10px auto;
 }
 
 .marketplace {
@@ -566,10 +562,15 @@ footer {
     .navbar-nav {
         align-items: center;
     }
+    .about{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
     .about-text {
         width:fit-content;
         text-align: center;
-        opacity: 0.5;
         align-items: center;
         justify-content: center!important;
     }
@@ -679,18 +680,18 @@ footer {
         width: full-width;
         margin-top: 0;
        }
-       .navbar{
-        background-image: none;
-        background-color:black;
-        opacity: 0.9;
-        color:white;
-        position: static;
+       .navbar {
+        background-color: black;
+        opacity: 0.6;
+        color: white;
+        position: fixed;
         z-index: 1;
         width: 100%;
-        height: auto;
+        height: 100px;
         justify-content: center;
         align-items: center;
-       }
+    }
+}
       #location{
         flex-wrap: wrap;
         display:block!important;
@@ -700,4 +701,3 @@ footer {
         justify-content: center!important;
         align-items: center;
     }
-}
