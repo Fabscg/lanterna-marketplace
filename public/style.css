@@ -442,9 +442,14 @@ footer {
 .special-body {
     margin-bottom: 0;
     font-size: x-large;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     height: 100%;
+}
+.second-page{
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
 }
 
 .special-body {
