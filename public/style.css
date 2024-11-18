@@ -71,7 +71,7 @@ th{
 }
 
 .navbar-toggler {
-    display:contents;
+    display:block;
     /* padding: 0.25rem 0.75rem; */
     font-size: 20px;
     line-height: 1;
@@ -82,7 +82,6 @@ th{
 }
 .navbar .container-fluid{
     justify-content: center;
-
 }
 
 .intro {
@@ -101,6 +100,9 @@ th{
 .navbar-nav,
 .nav-link:hover {
     color: black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .nav-item,
@@ -110,7 +112,6 @@ th{
     transition-duration: 2s;
     transition: width 2s;
     font-size: 16px;
-
 }
 
 .nav-item {
@@ -123,6 +124,8 @@ th{
     border-radius: 25px;
     font-weight: 600;
     text-shadow: none;
+    padding-right:10px;
+    padding-left:10px;
 }
 
 
@@ -211,7 +214,6 @@ tr
 
 span {
     font-size: 20px;
-    padding-left:200px;
 }
 
 .additions {
@@ -438,7 +440,6 @@ footer {
 }
 
 /* SPECIALS */
-.second-page,
 .special-body {
     margin-bottom: 0;
     font-size: x-large;
@@ -446,10 +447,11 @@ footer {
     text-align: center;
     height: 100%;
 }
-.second-page{
-  height: 100vh;
-  width: 100vw;
-  background-color: transparent;
+.special-title{
+    font-family: 'Allura', cursive;
+    font-size: 75px;
+    padding: 20px;
+    text-align: center;
 }
 
 .special-body {
@@ -484,9 +486,6 @@ footer {
     z-index:-4;
     position:-webkit-sticky;
     background-attachment: absolute;
-}
-.special-title{
-    padding-top: 100px;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -564,103 +563,95 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width: 980px) {
     #specials,
-    .navbar-nav {
+    .navbar-nav,
+    .specials {
         align-items: center;
-    }
-    .about{
-        display: block;
         justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .about-text {
-        width:fit-content;
-        text-align: center;
-        align-items: center;
-        justify-content: center!important;
-    }
-    .container-fluid{
-        align-items: center;
-        justify-content: flex-end;
-        flex-direction: row-reverse;
     }
 
-    #about-text{
+    .navbar-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-text {
+        width: fit-content;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+
+    #about-text {
         text-align: center;
         background-color: black;
         opacity: 0.5;
     }
-    .navbar-collapse {
-        flex-direction: column;
-        align-items: start;
-      }
-      
-      /* Prevent title from moving to the right */
-      .navbar .container-fluid {
-        justify-content: start;
-        display: flex;
-        align-items: center;
-      }
 
-    .specials {
-        background-attachment: cover;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-        position: fixed;
+
+    .navbar {
+        justify-content: center!important;
+        margin: 2px auto;
     }
+
     .food-icon-group {
-        display:flex;
-        height: 100% !important;
-        width: 100% !important;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
     .second-footer {
         padding-bottom: 20px;
     }
-
 }
 
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     :root {
-        width: fit-content;
+        width: 100%;
     }
 
     li {
         font-size: 30px;
     }
-    .navbar-container{
+
+    .navbar-container {
         display: flex;
-      justify-content: flex-end !important;
-      flex-direction: row-reverse !important;
-      align-items: center;
+        flex-direction: row-reverse !important;
+        align-items: center;
+        justify-content: space-around;
     }
 
     #body {
         text-align: -webkit-center;
-        position:relative;
-        width:100%;
+        position: relative;
+        width: 100%;
         min-height: 100vh;
     }
 
-
-    .our-restaurant {
-        justify-content: center;
-    }
-
-    .about-text {
-        text-align: center!important;
-        width: 100%;
-        font-size: 25px;
-    }
+    .our-restaurant,
     .opening-hours {
         text-align: center;
     }
- 
+
+    .about-text {
+        text-align: center !important;
+        width: 100%;
+        font-size: 25px;
+    }
+
     .accordion {
         font-size: 25px;
     }
@@ -672,16 +663,16 @@ footer {
 
     em {
         display: flex;
-        text-align: left;
         justify-content: space-between;
     }
+
     .marketplace {
         width: 100%;
         height: auto;
     }
 
     .copyright {
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
 
     footer {
@@ -690,38 +681,39 @@ footer {
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width: 560px) {
     .intro {
-        background: url("assets/img/pasta-and-flour.jpg");
+        background: url("assets/img/pasta-and-flour.jpg") no-repeat center center;
         background-size: cover;
-        background-repeat: no-repeat;
-        height: auto;
-        background-position: center center;
-        width: full-width;
         margin-top: 0;
-       }
-       navbar-fixed{
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar-fixed {
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1050;
-       }
+    }
 
-       #specials{
+    .special-title {
+        font-size: 20px !important;
+    }
+
+    #specials {
+        background: url("assets/img/specials-background.jpg") no-repeat center center;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: sticky;
-        height: auto;
-        background-position: center center;
-        width: full-width;
         margin-top: 0;
-       }
-      #location{
-        display:block!important;
-        padding: 20px;
-        width:100%;
+        width: 100%;
         height: auto;
-        justify-content: center!important;
-        align-items: center!important;
+    }
+
+    #location {
+        display: block !important;
+        padding: 20px;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
