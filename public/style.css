@@ -704,9 +704,9 @@ footer {
     #specials {
         background: url("assets/img/specials-background.jpg") no-repeat center center;
         background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
         margin-top: 0;
-        width: 100%;
-        height: auto;
     }
 
     #location {
