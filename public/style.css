@@ -49,7 +49,7 @@ th{
 
 #navbar_top{
     background-color: black;
-    opacity:0.8;
+    opacity:0.9;
     box-shadow: 0px 4px 7px #656565;
     color:white !important;
 }
@@ -449,9 +449,9 @@ footer {
 }
 .special-title{
     font-family: 'Allura', cursive;
-    font-size: 75px;
-    padding: 20px;
     text-align: center;
+    text-shadow: 5px 5px 4px black;
+    margin-top: 50px!important;
 }
 
 .special-body {
@@ -478,14 +478,12 @@ footer {
 }
 
 #specials {
-    background-image: url("assets/img/tomatoes.jpeg");
-    background-position: center center;
+    background-image: url("assets/img/pexels-karolina-grabowska-5725873.jpg");
+    background-position:top;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100%;
+    min-height: fit-content;
     z-index:-4;
-    position:-webkit-sticky;
-    background-attachment: absolute;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -546,14 +544,16 @@ footer {
 
 .img-fluid{
     align-items: center!important;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    height: 500px;
+   width:fit-content
 }
-.easter-info{
+/* .easter-info{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
     width: 500px;
     height: auto;
     color: yellowgreen;
-}
+} */
 
 .heart {
     font-weight: 800;
@@ -567,9 +567,10 @@ footer {
     #specials,
     .navbar-nav,
     .specials {
-        align-items: center;
+        align-items:end;
         justify-content: center;
     }
+    
 
     .navbar-header {
         display: flex;
@@ -701,12 +702,22 @@ footer {
         font-size: 20px !important;
     }
 
+    .img-fluid{
+        align-items: center!important;
+        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+        height: 500px;
+        object-fit:cover;
+    }
+
     #specials {
-        background: url("assets/img/specials-background.jpg") no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
+        background-image: url("assets/img/pexels-karolina-grabowska-5725873.jpg");
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
         height: 100%;
-        margin-top: 0;
+        z-index:-4;
+        position:relative;
+        background-attachment: absolute;
     }
 
     #location {
