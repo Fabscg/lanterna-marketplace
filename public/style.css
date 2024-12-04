@@ -13,6 +13,7 @@ tr{
 }
 html,
 body {
+    font-size: 1rem;
     overflow-x:hidden;
     margin: 0 !important;
     padding: 0 !important;
@@ -148,7 +149,7 @@ th{
 }
 
 .about-text {
-    min-width: 600px;
+    max-width: 600px;
     height:500px;
     display:block;
     justify-content: center!important;
@@ -522,7 +523,7 @@ footer {
     text-align: center;
     height: fit-content;
     margin: 50px auto;
-    width: 500px;
+    max-width: 500px;
 }
 
 .notice-body {
@@ -567,11 +568,10 @@ footer {
     #specials,
     .navbar-nav,
     .specials {
-        align-items:end;
+        align-items:center;
         justify-content: center;
     }
-    
-
+  
     .navbar-header {
         display: flex;
         justify-content: center;
@@ -635,6 +635,15 @@ footer {
         justify-content: space-around;
     }
 
+    .container-map{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width:500px;
+        padding-top:50px;
+        padding-bottom:50px
+    }
+
     #body {
         text-align: -webkit-center;
         position: relative;
@@ -649,7 +658,7 @@ footer {
 
     .about-text {
         text-align: center !important;
-        width: 100%;
+        max-width: 100%;
         font-size: 25px;
     }
 
@@ -708,6 +717,9 @@ footer {
         height: 500px;
         object-fit:cover;
     }
+    .container-restaurant{
+        max-width: fit-content;
+    }
 
     #specials {
         background-image: url("assets/img/pexels-karolina-grabowska-5725873.jpg");
@@ -718,6 +730,9 @@ footer {
         z-index:-4;
         position:relative;
         background-attachment: absolute;
+    }
+    iframe{
+        max-width:fit-content;
     }
 
     #location {
