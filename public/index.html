@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@00&display=swap" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>Lanterna</title>
 
     <link
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-    <nav id="navbar_top" class="navbar">
+    <nav id="navbar_top" class="navbar navbar-fixed">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -40,9 +41,9 @@
                     <div class="navbar-header">
                         <span class="navbar-brand page-scroll" href="#page-top"> <i class="fa-solid fa-pizza-slice"></i>
                             Lanterna
-                            Restaurant & Marketplace</span>
+                            Grab n' Go</span>
                     </div>
-                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler navbar-dark navbar-overlay" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <div class="navbar-toggler-icon"></div>
@@ -50,7 +51,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#menu-food"><i class="fa-solid fa-bars"></i>
+                                <a class="nav-link" href="#menu-food"><i class="fa-solid fa-ellipsis"></i>
                                     Menu</a>
                             </li>
                             <li class="nav-item">
@@ -79,39 +80,29 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row">
-                        <div class="intro-text">
-                            <h1>Lanterna</h1>
+                        <!-- <div class="intro-text">
+                            <h1>Grab n' Go</h1>
                             <h2 class="address">2812 Lakeshore Dr, Brechin, </h2>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-
-
-       <div id="about">
-            <div class="container-restaurant text-center">
-                <div clas>
-                    <div class="about-text">
-                        <h2 class="our-restaurant text-center align-center">Our Restaurant</h2>
-                        <hr>
-                        <p>Welcome to Lanterna Restaurant & Marketplace. Enjoy the authentic Italian cuisine from
-                            the
-                            south shores
-                            of Italy. Our marketplace has a great selection of Italian imported goods. Quality
-                            and quantity all in one place. Buon
-                            appetito
-                            & Benvenuti!
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="container-restaurant">
+        <div class="about-text">
+            <span class="dot">
+            <h2 class="our-restaurant text-center align-center">Lanterna<br>
+                Grab n' Go
+            </h2>
+            <hr>
+            <p>Welcome to Lanterna! Our new Grab and Go concept allows you to enjoy authentic italian cuisine from the south shores of Italy in the comfort of your own home. Quality and quantity all in one place. Buon appetito & Benvenuti!
+            </p>
+        </span>
         </div>
-
-
-
+    
+    </div>
+   
     <section class="menu">
         <h2 id="menu-food">Menu</h2>
         <div class="accordion" id="accordionExample">
@@ -140,7 +131,7 @@
                                 coating.</p>
                             <hr>
                             <li>ANTIPASTO<span>small $10 | large $15</span></li>
-                            <p>Olives, bocconcini cheese, prosciuto, cold grill vegetables; eggplant, zuccini, roasted
+                            <p>Olives, bocconcini cheese, prosciuto, cold grill vegetables; eggplant, zucchini, roasted
                                 red peppers and tomatoes.</p>
                             <hr>
                         </ul>
@@ -160,7 +151,7 @@
                         <li>House Salad<span>small $10 | large $15</span></li>
                         <p>Letucce, tomatoes, cucumbers tossed with homemade italian balsamic dressing</p>
                         <hr>
-                        <li>Ceasar Salad<span>small $10 | large $15</span></li>
+                        <li>Caesar Salad<span>small $10 | large $15</span></li>
                         
                         <p>Lettuce homemade croutons and parmigiano cheese</p>
                         <hr>
@@ -230,7 +221,7 @@
                               </tr>
                               <tr>
                                 <td></td>
-                                <th scope="row">SPAGETTI BOLOGNESE</th>
+                                <th scope="row">SPAGHETTI BOLOGNESE</th>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
@@ -255,20 +246,20 @@
                               </tr>
                               <tr>
                                 <th scope="row"></th>
-                                <td>FETUCCINE A LA CARBONARA</td>
+                                <td>FETTUCCINE A LA CARBONARA</td>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <th scope="row"><i class="fa-solid fa-leaf"></i></th>
-                                <td>FETUCCINE ALFREDO</td>
+                                <td>FETTUCCINE ALFREDO</td>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <th scope="row"><i class="fa-solid fa-leaf"></i></th>
-                                <td>SPAGUETTI</td>
-                                <td>Spaguetti in Olive Oil and Garlic
+                                <td>SPAGHETTI</td>
+                                <td>Spaghetti in Olive Oil and Garlic
                                     Sauce</td>
                                 <td>$15</td>
                               </tr>
@@ -413,15 +404,16 @@
     <section id="location">
         <div>
             <h2 class="contact-title">Our Location</h2>
-          <div class="row container">
-              <div class="col-lg-8 col-md-6">
+            <hr/>
+          <div class="row container-map">
+              <div class="col-lg-6 col-md-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.8270777809184!2d-79.21066838255615!3d44.539173100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd55243ebadace1%3A0x24e9e98f487dc995!2sLanterna%20Restaurant%20%26%20Marketplace!5e0!3m2!1sen!2sca!4v1655925273276!5m2!1sen!2sca"
                     width="600" height="450" frameborder="0" allowfullscreen loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
-            <div id="contact-us" class="col-lg-4 col-md-12 text-center align-center">
+            <div id="contact-us" class="col-lg-6 col-md-12 text-center align-center">
                     <h2 class="contact-title text-center">Contact Us</h2>
                     <h3>To place an order please call us at:<br><a class="contact-info" href="tel:705 505-0088"><i class="icon fa-solid fa-phone"></i>705-505-0088</a><br>
                     </h3>
@@ -429,15 +421,15 @@
           <div>
         </div>
     </section>
-    <div class="opening-hours">
+    <!-- <div class="opening-hours">
         <div class="timeline">
             <div>
                 <h2 class="openingHours-title text-center">Opening Hours</h2>
             </div>
             <hr>
             <div>
-                 <div class="timeline-dot closed"></div>
-                <div class="schedule">Sunday<span>CLOSED</span></div>
+                 <div class="timeline-dot text-success"></div>
+                <div class="schedule">Sunday<span>12:30pm-8:00pm</span></div>
             </div>
             <div>
                  <div class="timeline-dot closed"></div>
@@ -453,19 +445,19 @@
             </div>
             <div>
                  <div class="timeline-dot text-success"></div>
-                <div class="schedule">Thursday<span>12:00pm-8pm</span></div>
+                <div class="schedule">Thursday<span>4:00pm-8:00pm</span></div>
             </div>
             <div>
                  <div class="timeline-dot text-success"></div>
-                <div class="schedule">Friday<span>12:00pm-8pm</span></div>
+                <div class="schedule">Friday<span>4:00pm-8:00pm</span></div>
             </div>
             <div>
                  <div class="timeline-dot text-success"></div>
-                <div class="schedule">Saturday<span>12:00pm-8pm</span></div>
+                <div class="schedule">Saturday<span>12:00pm-8:00pm</span></div>
             </div>
         </div>
     <div>
-       
+        -->
     </div>
     </div>
             
@@ -518,11 +510,13 @@
     </div>
     <hr>
 
-    <div class="notice">
-        <i class="heart fa-solid fa-circle-exclamation fa-4x"></i>
+    <div class="notice bg-primary">
+        <i class="heart fa-solid fa-circle-info fa-4x"></i>
         <hr>
         <h2 class="heart">NOTICE</h2>
-        <P class="notice-body">PLEASE NOTE: Indoor dining is "CLOSED". Serving take out only.<br>
+        <h2>NO DINE - IN</h2>
+        <H2>PICK UP AND TAKE OUT ONLY</H2>
+        <P class="notice-body">SUNDAY, THURSDAY, FRIDAY AND SATURDAY SERVING ONLY TAKE OUT.<br/>
             
         </P>
     </div>
@@ -531,9 +525,9 @@
     </div> -->
 
     <footer>
-        <div class="marketplace">
+        <!-- <div class="marketplace">
             <div>Stone Baked Pizza | Deli | Imported Specialties</div>
-        </div>
+        </div> -->
         <div class="copyright pt-30">&copy; 2023 Lanterna. All rights reserved. Designed by <a class="autor" href="https://web-portfolio-1bf32.web.app/"
                  rel="nofollow"> <i class="fa-solid fa-terminal"></i> Fabiola C.
                 Gamboa</a></div>
