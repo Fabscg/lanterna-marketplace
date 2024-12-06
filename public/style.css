@@ -706,6 +706,11 @@ footer {
         width: 100%;
         z-index: 1050;
     }
+    .width-fit-content{
+        width: 350px;
+        max-height: min-content;
+        
+    }
 
     .special-title {
         font-size: 20px !important;
