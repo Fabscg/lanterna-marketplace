@@ -724,6 +724,9 @@ footer {
         max-height: min-content;
         
     }
+    .special-img{
+        max-width: 350px;
+    }
 
     .special-title {
         font-size: 20px !important;
