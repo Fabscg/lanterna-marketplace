@@ -214,9 +214,9 @@ tr
 
 
 span {
+    font-weight: 600!important;
     font-size: 20px;
 }
-
 .additions {
     background-color: black;
     margin: 20px auto;
@@ -624,6 +624,11 @@ footer {
         width: 100%;
     }
 
+    td{
+        line-height:normal;
+        font-size: 16px;
+    }
+
     li {
         font-size: 30px;
     }
@@ -669,6 +674,7 @@ footer {
     .additions {
         padding: 10px;
         font-size: 20px;
+        max-width:fit-content;
     }
 
     em {
