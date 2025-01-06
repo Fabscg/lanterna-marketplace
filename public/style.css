@@ -384,6 +384,15 @@ em {
   background-color: white;
   transform: translateX(-50%);
 }
+.special-img{
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 20px 20px 50px grey;
+    margin:30px auto !important;
+    border-radius: 25px;
+    padding: 30px auto; 
+}
 
 iframe{
     border-radius: 20px 20px 20px 20px;
@@ -444,7 +453,6 @@ footer {
 .special-body {
     margin-bottom: 0;
     font-size: x-large;
-    padding: 20px 0;
     text-align: center;
     height: 100%;
 }
@@ -479,7 +487,7 @@ footer {
 }
 
 #specials {
-    background-image: url("assets/img/pexels-karolina-grabowska-5725873.jpg");
+    background-color: black;
     background-position:top;
     background-size:cover;
     background-repeat: no-repeat;
@@ -546,8 +554,7 @@ footer {
 .img-fluid{
     align-items: center!important;
     box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
-    height: 500px;
-   width:fit-content
+    max-width:inherit;
 }
 /* .easter-info{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -733,12 +740,10 @@ footer {
     }
 
     #specials {
-        background-image: url("assets/img/pexels-karolina-grabowska-5725873.jpg");
-        background-position: center center;
+        background-color: black;
         background-size:cover;
-        background-repeat: no-repeat;
         height: 100%;
-        z-index:-4;
+        z-index:4;
         position:relative;
         background-attachment: absolute;
     }
