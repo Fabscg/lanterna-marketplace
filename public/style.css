@@ -705,6 +705,12 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
+    h1, h2{
+        font-size: 50px;
+    }
+    td, th, p {
+        font-size: 14px;
+    }
     .intro {
         background: url("assets/img/pasta-and-flour.jpg") no-repeat center center;
         background-size: cover;
@@ -740,6 +746,10 @@ footer {
     }
     .container-restaurant{
         max-width: fit-content;
+    }
+    .container{
+        padding-top:20px;
+        height: 100%;
     }
 
     #specials {
