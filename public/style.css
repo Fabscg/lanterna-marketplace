@@ -40,7 +40,6 @@ h5 {
 
 p {
     font-size: 20px;
-    padding-bottom: 20px;
 }
 th{
     font-size: 20px;
@@ -63,13 +62,22 @@ th{
 
 .openingHours-title,
 .contact-title,
-#menu-food,
 .our-restaurant {
     text-align: center;
-    padding-top:50px;
+    padding-top: 0;
     font-family: 'Allura', cursive;
     font-size: 75px;
 }
+
+#menu-food {
+    text-align: center;
+    margin-top: 50px;  /* Adds space ABOVE the menu */
+    font-family: 'Allura', cursive;
+    font-size: 75px;
+    line-height: 1.2;
+    padding-top: 0; /* Remove unnecessary padding */
+}
+
 
 .navbar-toggler {
     display:block;
@@ -147,12 +155,22 @@ th{
     align-items: center;
     border-radius: 50px;
 }
+.container-steps {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-bottom: 100px !important;
+    line-height: normal;
+    margin-bottom: 200px;
+}
+
 
 .about-text {
     max-width: 600px;
-    height:500px;
+    height:fit-content;
     display:block;
     justify-content: center!important;
+    align-items: center;
 }
 
 .our-restaurant {
@@ -162,13 +180,12 @@ th{
 }
 
 .container-restaurant {
-    margin: 20px auto;
-    padding: 20px auto;
+    padding: 50px auto;
     justify-content:center;
     display:flex;
-    width:600px;text-align: center;
+    width:600px;
+    text-align: center;
 }
-
 
 /* SECTION MENU */
 .specials-button{
@@ -661,6 +678,14 @@ footer {
         position: relative;
         width: 100%;
         min-height: 100vh;
+    }
+    .container-steps {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding-bottom: 200px !important;
+        line-height: normal;
+        margin-bottom: 200px;
     }
 
     .our-restaurant,
