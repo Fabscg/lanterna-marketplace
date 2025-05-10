@@ -17,11 +17,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@00&display=swap" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>Lanterna</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&family=Montserrat:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
@@ -29,7 +31,7 @@
 </head>
 
 <body>
-    <nav id="navbar_top" class="navbar">
+    <nav id="navbar_top" class="navbar navbar-fixed">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -40,9 +42,9 @@
                     <div class="navbar-header">
                         <span class="navbar-brand page-scroll" href="#page-top"> <i class="fa-solid fa-pizza-slice"></i>
                             Lanterna
-                            Restaurant & Marketplace</span>
+                            Grab n' Go</span>
                     </div>
-                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler navbar-dark navbar-overlay" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <div class="navbar-toggler-icon"></div>
@@ -50,8 +52,8 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#menu-food"><i class="fa-solid fa-bars"></i>
-                                    Menu</a>
+                                <a class="nav-link" href="#menu-food"><i class="fa-solid fa-ellipsis"></i>
+                                    Take-Out Menu</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#location"><i class="fa-solid fa-location-dot"></i>
@@ -60,10 +62,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact-us"><i class="fa-solid fa-paper-plane"></i> Contact
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./specials.html"><i class="fa-solid fa-utensils"></i>
-                                    Specials</a>
                             </li>
                         </ul>
                     </div>
@@ -79,106 +77,97 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row">
-                        <div class="intro-text">
-                            <h1>Lanterna</h1>
+                        <!-- <div class="intro-text">
+                            <h1>Grab n' Go</h1>
                             <h2 class="address">2812 Lakeshore Dr, Brechin, </h2>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-
-
-       <div id="about">
-            <div class="container-restaurant text-center">
-                <div clas>
-                    <div class="about-text">
-                        <h2 class="our-restaurant text-center align-center">Our Restaurant</h2>
-                        <hr>
-                        <p>Welcome to Lanterna Restaurant & Marketplace. Enjoy the authentic Italian cuisine from
-                            the
-                            south shores
-                            of Italy. Our marketplace has a great selection of Italian imported goods. Quality
-                            and quantity all in one place. Buon
-                            appetito
-                            & Benvenuti!
-                        </p>
-                    </div>
-                </div>
+    <section class="container-restaurant">
+        <div class="about-text">
+            <span class="dot">
+                <h2 class="our-restaurant text-center align-center">Lanterna Grab n' Go</h2>
+            </span><br>
+            <hr>
+            <p>
+                At Lanterna Grab and Go, we believe great food shouldn't slow you down.
+                Whether you are rushing to work, or just need a quick bite, enjoy authentic Italian cuisine.
+            </p><br>
+    
+            <div class="container-steps">
+                <p>1. Call in your order.</p><br>
+                <p>2. Let us know the time of pick up.</p><br>
+                <p>3. Pay over the phone or at the time of your pick up. You may also place your order and wait. Why not enjoy a draft beer while waiting for your meal? Happy hour all day at $4.99. So what are you waiting for? Grab your favourite dish and get on with your day. Buon Appetito</p>
             </div>
         </div>
-
-
-
+    </section>
+   
     <section class="menu">
-        <h2 id="menu-food">Menu</h2>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header bg-dark bg-dark" id="headingOne">
-                    <button class="collapsed btn btn-lg btn-block btn-dark bg-dark" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                        aria-controls="collapseOne">
-                        <i class="icon-plus fa-solid fa-plus"></i> APPETIZERS
-                    </button>
-                </h2>
 
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <ul class="appetizers">
-                            <li>BRUSCHETTA (6 Baguette slices)<span>$10</span></li>
-                            <p>Toasted bread rubbed with garlic and topped with olive oil, salt and diced tomato &
-                                onion.</p>
-                            <hr>
-                            <li>GARLIC BREAD (1 Bun)<span>$6 | w / Cheesse $8</span></li>
-                            <p>Fresh bread topped with garlic. (Optional Mozzarella Cheese<br>
-                            <hr>
-                            <li>ARANCINI (Rice balls)<span>$10</span></li>
-                            <p>Crispy, deep fried riceballs with mozzarella cheese filling and crunchy breadcrumb
-                                coating.</p>
-                            <hr>
-                            <li>ANTIPASTO<span>small $10 | large $15</span></li>
-                            <p>Olives, bocconcini cheese, prosciuto, cold grill vegetables; eggplant, zuccini, roasted
-                                red peppers and tomatoes.</p>
-                            <hr>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="accordion" id="accordionExample">
+            <h2 id="menu-food" class="text-center py-8" style="line-height: 1.2;">Take Out Menu</h2>
+
             <div class="accordion-item">
                 <h2 class="accordion-header bg-dark" id="headingTwo">
                     <button class="salads btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="icon-plus fa-solid fa-plus"></i> SALADS
+                        <i class="icon-plus fa-solid fa-plus"></i> APPETIZERS
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <li>House Salad<span>small $10 | large $15</span></li>
-                        <p>Letucce, tomatoes, cucumbers tossed with homemade italian balsamic dressing</p>
-                        <hr>
-                        <li>Ceasar Salad<span>small $10 | large $15</span></li>
-                        
-                        <p>Lettuce homemade croutons and parmigiano cheese</p>
-                        <hr>
-                        <li>Greek Salad<span>small $10 | large $15</span></li>
-                        <p>Lettuce, tomatoes, cucumber, onions, olives, feta cheese with oregano tossed in olive oil &
-                            balsamic vinegar dressing.</p>
-                            <hr>
-                        <li>Caprese Salad<span>small $10 | large $17</span></li>
-                        <p>Sliced tomatoes topped with bocconcini cheese in a basil olive oil, drizzled with pesto.</p>
-                        <hr>
-                        <div class="additions">
-                            <p>ADDITIONS</p>
-                            <em><i class="fa-solid fa-angle-right"></i>Grill Chicken <span>$4</span></em>
-                            <em><i class="fa-solid fa-angle-right"></i>Veal or Chicken Parmigiana<span>$7</span></em>
-                            </p>
-                        </div>
+                        <h1>Appetizers</h1>
+                        <table class="table seafood-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">PRICE</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">GARLIC BREAD</th>
+                                    <td></td>
+                                    <td>Fresh bread topped with garlic. (Optional Mozzarella Cheese)</td>
+                                    <td>$6 <br>
 
-
+                                    <u>w/cheese $8</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CAESAR SALAD</th>
+                                <td></td>
+                                    <td>Lettuce homemade croutons and parmigiano cheese.</td>
+                                    <td><u>$15</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">GREEK SALAD</th>
+                                    <td></td>
+                                    <td>Lettuce, tomatoes, cucumber, onions, olives, feta cheese with oregano tossed in olive oil &
+                                        balsamic vinegar dressing.</td>
+                                    <td><u>$15</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">HOUSE SALAD</th>
+                                    <td></td>
+                                    <td>Lettuce, tomatoes, cucumber with oregano tossed in olive oil &
+                                        balsamic vinegar dressing.</td>
+                                    <td><u>$15</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CAPRESE SALAD</th>
+                                <td></td>
+                                    <td>Boconcini cheese with fresh tomatoes, served with Basil, Olive Oil and Balsamic Vinegar dressing.</td>
+                                        <td><u>$17</u></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
                     </div>
                 </div>
             </div>
@@ -192,6 +181,7 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <h1>Pasta</h1>
                         <table class="table justify-start">
                             <thead>
                               <tr>
@@ -204,47 +194,32 @@
                             <tbody>
                               <tr>
                                 <td><i class="fa-solid fa-leaf"></i></td>
-                                <th scope="row">PENNE</th>
-                                <td>Penne in Tomato and
-                                    Basil.</td>
-                                <td>$15</td>
-                                
+                                <th scope="row">PENNE IN TOMATO AND BASIL</th>
+                                <td></td>
+                                <td>$15</td>   
                               </tr>
                               <tr>
                                 <td><i class="fa-solid fa-leaf pr-4"></i> <i class="fa-solid fa-pepper-hot"></i></td>
                                 <th scope="row">PENNE ARRABIATA</th>
-                                <td>Penne Arrabiata (Spicy tomato sauce)</td>
+                                <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <td></td>
                                 <th scope="row">PENNE ALLA VODKA</th>
-                                <td>Penne alla Vodka (Seved with bacon)</td>
+                                <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <td></td>
                                 <th scope="row">RIGATONI BOLOGNESE</th>
-                                <td>Rigatoni Bolognese (Meat sauce)</td>
-                                <td>$15</td>
-                              </tr>
-                              <tr>
-                                <td></td>
-                                <th scope="row">SPAGETTI BOLOGNESE</th>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <td></td>
-                                <th scope="row">RAVIOLI</th>
-                                <td>Ravioli (Meat filling)</td>
-                                <td>$15</td>
-                              </tr>
-                              <tr>
-                                <td><i class="fa-solid fa-leaf"></i></td>
-                                <th scope="row">TORTELLINI</th>
-                                <td>Tortellini (Cheesse
-                                    filling)</td>
+                                <th scope="row">SPAGHETTI BOLOGNESE</th>
+                                <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
@@ -255,32 +230,42 @@
                               </tr>
                               <tr>
                                 <th scope="row"></th>
-                                <td>FETUCCINE A LA CARBONARA</td>
+                                <td>FETTUCCINE A LA CARBONARA</td>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <th scope="row"><i class="fa-solid fa-leaf"></i></th>
-                                <td>FETUCCINE ALFREDO</td>
+                                <td>FETTUCCINE ALFREDO</td>
                                 <td></td>
                                 <td>$15</td>
                               </tr>
                               <tr>
                                 <th scope="row"><i class="fa-solid fa-leaf"></i></th>
-                                <td>SPAGUETTI</td>
-                                <td>Spaguetti in Olive Oil and Garlic
-                                    Sauce</td>
+                                <td>SPAGHETTI</td>
+                                <td></td>
                                 <td>$15</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <th scope="row">RAVIOLI</th>
+                                <td></td>
+                                <td>$16</td>
+                              </tr>
+                              <tr>
+                                <td><i class="fa-solid fa-leaf"></i></td>
+                                <th scope="row">TORTELLINI</th>
+                                <td></td>
+                                <td>$16</td>
                               </tr>
                             </tbody>
                           </table>
                         <div class="additions">
                             <p>ADDITIONS TO YOUR PASTA</p>
-                            <em><i class="fa-solid fa-angle-right"></i>GRILL CHICKEN BREAST<span>$4</span></em>
-                            <em><i class="fa-solid fa-angle-right"></i>MEATBALL<span>$4</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>GRILL CHICKEN BREAST<span>$5</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>MEATBALL<span>$5</span></em>
                             <em><i class="fa-solid fa-angle-right"></i>SAUSAGE<span>$5</span></em>
-                            <em><i class="fa-solid fa-angle-right"></i>SHRIMPS<span>$5</span></em>
-                            <em><i class="fa-solid fa-angle-right"></i>VEAL or CHICKEN PARMIGIANA<span>$7</span></em>
+                            <em><i class="fa-solid fa-angle-right"></i>VEAL or CHICKEN PARMIGIANA<span>$8</span></em>
 
                             <p class="all-pasta-adds">ALL OUR PASTAS ARE SERVED WITH FRESH GRATED PARMESAN CHEESE UNLESS
                                 OTHERWISE NOTED.</p>
@@ -301,127 +286,195 @@
                     <div class="accordion-body">
                         <div class="extra-cheese-inquire">
                             <div class="gluten-inquire">
-                                <p>GLUTTEN FREE, PIZZA</p><br>
-                                <p>All our pizzas come with our homemade sauce & mozzarella cheese unless stated otherwise.</p>
+                                <h1>Pizzas</h1>
+                                <table class="table seafood-table">
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <th scope="row">
+                                            <td></td>
+                                            <td>Mushrooms, Peppers, Black/Green olives, Onions, Pineapple & Sundried tomatoes</td>
+                                            <td><u>$1ea</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td></td>
+                                            <td>Pepperoni, Bacon, Sausage, Sausage, Soppresata, Ground beef, Grilled Chicken & Anchovies.</td>
+                                            <td><u>$2ea</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td></td>
+                                            <td>Bocconcini & Feta Cheese</td>
+                                            <td><u>$3ea</u></td>
+                                        </th>
+                                    </tr>
+                                    <p>GLUTTEN FREE OPTION AVAILABLE</p><br>
+
+                                </tbody>
+                                </th>
                             </div>
                             <br>
-                            <h5>LARGE 18"(8 slices) <span>$20</span> </h5>
+                            <div>
+                                <h5>LARGE 18"(8 slices) <span>$22</span></h5>
                             <p>18" Pizza come with the flavours of homemade sauce,cheese and seasoning rushing into your mouth.</p>
                             <hr>
-                            <h5>MEDIUM 14" (8 slices) <span>$15</span></h5>
+                            <h5>MEDIUM 14" (8 slices) <span>$17</span></h5>
                             <p>A hot and succulent 14" Pizza. Eight slices of wonderfull taste and flavour in every crunchy bite.</p>
                             <hr>
-                        </div>
-                        <div>
-                            <h5>ADDITIONAL VEGETABLES TOPPINGS <span>$1ea</span>
-                                <p>Peppers, Mushrooms, Olives, Onions, Sun-dried Tomatoes, Pineapple</p>
-                            </h5>
-                            <h5>MEAT TOPPINGS <span>$2ea</span>
-                                <p>Pepperoni, Bacon, Sausage, Soppresata, Grill chicken, Anchovies.</p>
-                            </h5>
-                            <h5>PREMIUM CHEESE TOPINGS <span>$3ea</span>
-                                <p>Feta cheese, Bocconcini</p>
-                            </h5>
-                            <hr>
+                            </div>
+                            <p><strong>ADDITIONAL TOPPINGS FOR YOUR PIZZA</strong></p>
+                                </table>                                    
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header bg-dark" id="headingFive">
+            
+            <!-- <div class="accordion-item">
+                <h2 class="accordion-header bg-dark" id="headingfive">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                        <i class="icon-plus fa-solid fa-plus"></i> SANDWICHES
+                        <i class="icon-plus fa-solid fa-plus"></i>
                     </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <ul>
-                            <li>VEAL PARMIGIANA</li>
-                            <p>Crispy breaded veal served on a crusty bun, topped with our home made tomato sauce & fresh mozzarella cheese <span>$10</span></p>
-                            <hr>
-                            <li>CHICKEN PARMIGIANA <span>$10</span></li>
-                            <p>Crispy breaded chicken served on a crusty bun, topped with our famous tomato sauce & fresh mozzarella cheese.</p>
-                            <hr>
-                            <li>MEATBALL <span>$10</span></li>
-                            <p>A long time family recipe. Made with beef, served on a crispy bun & topped with our famous tomato sauce.</p>
-                            <hr>
-                        </ul>
+                        <div class="extra-cheese-inquire">
+                            <div class="gluten-inquire">
+                                <h1></h1>
+                                <table class="table seafood-table">
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Clasica</td>
+                                            <td>Pepperoni</td>
+                                            <td><u>$14</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Merguerita</td>
+                                            <td>Boconccini & fresh Basil.</td>
+                                            <td><u>$14</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Canadian</td>
+                                            <td>Pepperoni, Mushroom, Bacon</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Hawaiian</td>
+                                            <td>Pineapple & Ham</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Vegetarian</td>
+                                            <td>Mushroom, Sweet peppers, Olives, Onions, Tomato</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Meat Lover</td>
+                                            <td>Pepperoni, Bacon, Sausage, Ground Beef</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Mediterranean</td>
+                                            <td>Black Olives, Feta, Sundried Tomatoes, Red Peppers & Onions</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <td>Joe's Pie</td>
+                                            <td>Soppressata, Black Olives, Hot Peppers, Onions & Aurugula</td>
+                                            <td><u>$17</u></td>
+                                        </th>
+                                    </tr>
+                                    <p>All pizzas are served with a side salad OR  side order of potato wedges.</p>
+                                </tbody>
+                                </th>
+                                </table>                                    
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="accordion-item">
                 <h2 class="accordion-header bg-dark" id="headingSix">
                     <button class="collapsed btn-lg btn-block btn-dark bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                        <i class="icon-plus fa-solid fa-plus"></i> SEAFOOD
+                        <i class="icon-plus fa-solid fa-plus"></i> SANDWICHES
                     </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-
-                        <div>
-                            <table class="table seafood-table">
+                        <h1>Sandwiches</h1>
+                        <table class="table seafood-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">PRICE</th>
+                                </tr>
                             </thead>
+                        <tbody>
                             <tr>
-                                <th scope="row">
-                                    <th>SEAFOOD</th>
-                                    <th></th>
-                                    <th>PRICE</th>
-                                </th>
+                                <th scope="row">VEAL PARMIGIANA</th>
+                                <td></td>
+                                <td>Crispy breaded veal served on a crusty bun, topped with our home made tomato sauce & fresh mozzarella cheese.</td>
+                                    <td><u>$11</u></td>
                             </tr>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <td>MUSSELS IN MARINARA</td>
-                                        <td>Mussels steamed to perfection in tomato broth infused with basil, garlic, white wine & garnished with fresh herbs.</td>
-                                        <td>$15</td>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <td>ZUPPA DI PESCE (Fish stew)</td>
-                                        <td>Shrimps, cod, calamari and mussels.</td>
-                                        <td>$20</td>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <td>BAKED SALMON FILET</td>
-                                        <td>Oven baked salmon filet served with your choice of pasta or salad.</td>
-                                        <td>$20</td>
-                                    </th>
-                                </tr>
-                            </tbody>
-                            </th>
-                            </table>
-                        </div>
+                            <tr>
+                                <th scope="row">CHICKEN PARMIGIANA</th>
+                                    <td></td>
+                                    <td>Crispy breaded chicken served on a crusty bun, topped with our famous tomato sauce & fresh mozzarella cheese.</td>
+                                    <td><u>$11</u></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MEATBALL</th>
+                                <td></td>
+                                    <td>A long time family recipe. Made with beef, served on a crispy bun & topped with our famous tomato sauce.</td>
+                                    <td><u>$11</u></td>
+                            </tr>
+                            <p>Additions to your sandwich + $1ea. Sweet Peppers, Onions and Mushrooms</p>
+                           
+                        </table>
+                    
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-     <!-- <section>
-            <div class="specials-button text-center">
-                <a class="btn btn-warning btn-lg text-center" href="./specials.html" role="button">Check our SPECIALS</a>
-                <h2><i class="fa-solid fa-arrow-left fa-2x"> </i>Click here to see our New Years Special!!!</h2>
-            </div>
-        </section> -->
 
     <section id="location">
         <div>
             <h2 class="contact-title">Our Location</h2>
-          <div class="row container">
-              <div class="col-lg-8 col-md-6">
+            <hr/>
+          <div class="row container-map">
+              <div class="col-lg-6 col-md-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.8270777809184!2d-79.21066838255615!3d44.539173100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd55243ebadace1%3A0x24e9e98f487dc995!2sLanterna%20Restaurant%20%26%20Marketplace!5e0!3m2!1sen!2sca!4v1655925273276!5m2!1sen!2sca"
                     width="600" height="450" frameborder="0" allowfullscreen loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
-            <div id="contact-us" class="col-lg-4 col-md-12 text-center align-center">
+            <div id="contact-us" class="col-lg-6 col-md-12 text-center align-center">
                     <h2 class="contact-title text-center">Contact Us</h2>
                     <h3>To place an order please call us at:<br><a class="contact-info" href="tel:705 505-0088"><i class="icon fa-solid fa-phone"></i>705-505-0088</a><br>
                     </h3>
@@ -429,43 +482,7 @@
           <div>
         </div>
     </section>
-    <div class="opening-hours">
-        <div class="timeline">
-            <div>
-                <h2 class="openingHours-title text-center">Opening Hours</h2>
-            </div>
-            <hr>
-            <div>
-                 <div class="timeline-dot closed"></div>
-                <div class="schedule">Sunday<span>CLOSED</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot closed"></div>
-                <div class="schedule">Monday<span>CLOSED</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot closed"></div>
-                <div class="schedule">Tuesday<span>CLOSED</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot closed"></div>
-                <div class="schedule">Wednesday<span>CLOSED</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot text-success"></div>
-                <div class="schedule">Thursday<span>12:00pm-8pm</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot text-success"></div>
-                <div class="schedule">Friday<span>12:00pm-8pm</span></div>
-            </div>
-            <div>
-                 <div class="timeline-dot text-success"></div>
-                <div class="schedule">Saturday<span>12:00pm-8pm</span></div>
-            </div>
-        </div>
-    <div>
-       
+
     </div>
     </div>
             
@@ -518,22 +535,18 @@
     </div>
     <hr>
 
-    <div class="notice">
-        <i class="heart fa-solid fa-circle-exclamation fa-4x"></i>
-        <hr>
-        <h2 class="heart">NOTICE</h2>
-        <P class="notice-body">PLEASE NOTE: Indoor dining is "CLOSED". Serving take out only.<br>
-            
-        </P>
+    <div class="text-center">
+        <h1>Special</h1>
+      <img class="special-img" src="./assets/img/pepperoni-pizza.jpg" alt="pizza">
     </div>
     <!-- <div class="info-container">
         <img class="easter-info" src="./assets/img/easter-ad.jpeg" alt="restaurant" class="img-fluid">
     </div> -->
 
     <footer>
-        <div class="marketplace">
+        <!-- <div class="marketplace">
             <div>Stone Baked Pizza | Deli | Imported Specialties</div>
-        </div>
+        </div> -->
         <div class="copyright pt-30">&copy; 2023 Lanterna. All rights reserved. Designed by <a class="autor" href="https://web-portfolio-1bf32.web.app/"
                  rel="nofollow"> <i class="fa-solid fa-terminal"></i> Fabiola C.
                 Gamboa</a></div>

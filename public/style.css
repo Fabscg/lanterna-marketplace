@@ -13,6 +13,7 @@ tr{
 }
 html,
 body {
+    font-size: 1rem;
     overflow-x:hidden;
     margin: 0 !important;
     padding: 0 !important;
@@ -39,7 +40,6 @@ h5 {
 
 p {
     font-size: 20px;
-    padding-bottom: 20px;
 }
 th{
     font-size: 20px;
@@ -48,66 +48,77 @@ th{
 }
 
 #navbar_top{
-    position:fixed;
+    background-color: black;
+    opacity:0.9;
     box-shadow: 0px 4px 7px #656565;
+    color:white !important;
 }
 .nav {
     background-color: black;
     position: fixed;
     z-index: 1;
+    width:100%;
 }
 
 .openingHours-title,
 .contact-title,
-#menu-food,
 .our-restaurant {
     text-align: center;
-    padding-top:50px;
+    padding-top: 0;
     font-family: 'Allura', cursive;
     font-size: 75px;
 }
 
+#menu-food {
+    text-align: center;
+    font-family: 'Allura', cursive;
+    font-size: 75px;
+    line-height: 1.2;
+}
+
+
 .navbar-toggler {
-    display:contents;
+    display:block;
     /* padding: 0.25rem 0.75rem; */
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1;
     background-color: transparent;
     border: 3px solid yellowgreen;
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
 }
+.navbar .container-fluid{
+    justify-content: center;
+}
 
-nav,
 .intro {
     background: url("assets/img/pasta-and-flour.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height: 500px !important;
     background-position: center center;
     background-attachment: fixed;
-    width: 100%;
     margin-top: 0;
     padding: 120px 0 80px 0;
-}
-
-.navbar-brand {
-    color: white;
+    height: auto;
+    width: full-width;
 }
 
 .navbar-nav,
 .nav-link:hover {
     color: black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .nav-item,
 .nav-link {
     color: white;
     font-weight: 600px;
-    /* justify-content: space-between; */
     transition-duration: 2s;
     transition: width 2s;
-
+    font-size: 16px;
 }
 
 .nav-item {
@@ -120,6 +131,8 @@ nav,
     border-radius: 25px;
     font-weight: 600;
     text-shadow: none;
+    padding-right:10px;
+    padding-left:10px;
 }
 
 
@@ -132,6 +145,7 @@ nav,
 }
 
 #location{
+    flex-direction: column !important;
     display: flex!important;
     padding: 20px;
     width: 100%;
@@ -139,31 +153,42 @@ nav,
     align-items: center;
     border-radius: 50px;
 }
+.container-steps {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 20px auto;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1a1e21;
+    opacity: 0.4;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 60px -16px teal;
+}
+
 
 .about-text {
-    text-align: center;
-    padding: 40px;
-    margin: 20px auto; 
-    background-color: black;
-    opacity: 0.5;
-    border-radius: 280px !important;
-    max-width: 500px;
-    height:auto;
+    padding: 0px auto;
+    width: 600px;
+    height:100%;
     display:block;
-    justify-content: center!important;
 }
 
 .our-restaurant {
-    display: inline-block;
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container-restaurant {
-    margin: 20px;
-    padding: 20px auto;
+    padding: 50px auto;
+    justify-content:center;
+    display:flex;
+    text-align: center;
 }
-
 
 /* SECTION MENU */
 .specials-button{
@@ -209,10 +234,9 @@ tr
 
 
 span {
+    font-weight: 600!important;
     font-size: 20px;
-    padding-left:200px;
 }
-
 .additions {
     background-color: black;
     margin: 20px auto;
@@ -299,6 +323,12 @@ em {
     justify-content: flex-end;
     font-size: 20px;
 }
+.contact-us{
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+}
 
 .card h4 {
     width:100%;
@@ -346,6 +376,7 @@ em {
     margin: 0 auto;
     position: relative;
     padding: 10px 0 100px;
+    color:white !important;
 }
 
 .timeline-dot {
@@ -373,6 +404,15 @@ em {
   background-color: white;
   transform: translateX(-50%);
 }
+.special-img{
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 20px 20px 50px grey;
+    margin:30px auto !important;
+    border-radius: 25px;
+    padding: 30px auto; 
+}
 
 iframe{
     border-radius: 20px 20px 20px 20px;
@@ -387,16 +427,6 @@ iframe{
     margin: 10px auto;
     font-size: xx-large;
     text-align: center;
-}
-
-.address{
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    opacity: 0.7;
-    width:fit-content;
-    padding:20px;
-    border-radius: 15px;
-    margin: 10px auto;
 }
 
 .marketplace {
@@ -440,13 +470,17 @@ footer {
 }
 
 /* SPECIALS */
-.second-page,
 .special-body {
     margin-bottom: 0;
     font-size: x-large;
-    padding: 20px;
     text-align: center;
     height: 100%;
+}
+.special-title{
+    font-family: 'Allura', cursive;
+    text-align: center;
+    text-shadow: 5px 5px 4px black;
+    margin-top: 50px!important;
 }
 
 .special-body {
@@ -473,17 +507,12 @@ footer {
 }
 
 #specials {
-    background-image: url("assets/img/tomatoes.jpeg");
-    background-position: center center;
+    background-color: black;
+    background-position:top;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100%;
+    min-height: fit-content;
     z-index:-4;
-    position:-webkit-sticky;
-    background-attachment: absolute;
-}
-.special-title{
-    padding-top: 100px;
 }
 .specials-img{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
@@ -522,7 +551,7 @@ footer {
     text-align: center;
     height: fit-content;
     margin: 50px auto;
-    width: 500px;
+    max-width: 500px;
 }
 
 .notice-body {
@@ -544,14 +573,15 @@ footer {
 
 .img-fluid{
     align-items: center!important;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+    max-width:inherit;
 }
-.easter-info{
+/* .easter-info{
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
     width: 500px;
     height: auto;
     color: yellowgreen;
-}
+} */
 
 .heart {
     font-weight: 800;
@@ -561,73 +591,122 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width: 980px) {
     #specials,
-    .navbar-nav {
-        align-items: center;
-    }
-    .about-text {
-        width:fit-content;
-        text-align: center;
-        opacity: 0.5;
-        align-items: center;
-        justify-content: center!important;
-    }
-
-    #about-text{
-        text-align: center;
-        background-color: black;
-        opacity: 0.5;
-    }
-
+    .navbar-nav,
     .specials {
-        background-attachment: cover;
-        align-items: center;
+        align-items:center;
         justify-content: center;
-        background-color: black;
-        position: fixed;
     }
+  
+    .navbar-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-text {
+        width: fit-content;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    #menu-food {
+        display:block;
+        text-align: center;
+        font-family: 'Allura', cursive;
+        font-size: 50px;
+        line-height: 1.2;
+        padding-bottom: 50px;
+    }
+
+
+    #about-text {
+        text-align: center;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+
+    .navbar {
+        justify-content: center!important;
+        margin: 2px auto;
+    }
+
     .food-icon-group {
-        display:flex;
-        height: 100% !important;
-        width: 100% !important;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
     .second-footer {
         padding-bottom: 20px;
     }
-
 }
 
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     :root {
-        width: fit-content;
+        width: 100%;
+    }
+
+    td{
+        line-height:normal;
+        font-size: 16px;
     }
 
     li {
         font-size: 30px;
     }
 
-    #body {
-        text-align: -webkit-center;
-        position:relative;
-        width:100%;
-        min-height: 100vh;
+    .navbar-container {
+        display: flex;
+        flex-direction: row-reverse !important;
+        align-items: center;
+        justify-content: space-around;
     }
 
-    .our-restaurant {
+    .container-map{
+        
+        display: grid;
         justify-content: center;
+        align-items: center;
+        max-width:500px;
+        padding-top:50px;
+        padding-bottom:50px
+    }
+
+    #body {
+        text-align: -webkit-center;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .container-steps {
+        display: flex !important;
+        align-items: center !important;
+        padding: 20px;
+    }
+
+    .our-restaurant,
+    .opening-hours {
+        text-align: center;
     }
 
     .about-text {
-        text-align: center!important;
-        width: 100%;
+        text-align: center !important;
+        max-width: 100%;
         font-size: 25px;
-    }
-    .opening-hours {
-        text-align: center;
     }
 
     .accordion {
@@ -636,21 +715,22 @@ footer {
 
     .additions {
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
+        max-width:fit-content;
     }
 
     em {
         display: flex;
-        text-align: left;
-        justify-content: space-between;
+        justify-content:flex-start;
     }
+
     .marketplace {
         width: 100%;
         height: auto;
     }
 
     .copyright {
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
 
     footer {
@@ -659,45 +739,71 @@ footer {
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width: 560px) {
+    h1, h2{
+        font-size: 50px;
+    }
+    td, th, p {
+        font-size: 14px;
+    }
     .intro {
-        background: url("assets/img/pasta-and-flour.jpg");
+        background: url("assets/img/pasta-and-flour.jpg") no-repeat center center;
         background-size: cover;
-        background-repeat: no-repeat;
-        height: auto;
-        background-position: center center;
-        width: full-width;
         margin-top: 0;
-       }
-
-       #specials{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: sticky;
-        height: auto;
-        background-position: center center;
-        width: full-width;
-        margin-top: 0;
-       }
-       .navbar{
-        background-image: none;
-        background-color:black;
-        opacity: 0.9;
-        color:white;
-        position: static;
-        z-index: 1;
         width: 100%;
         height: auto;
-        justify-content: center;
-        align-items: center;
-       }
-      #location{
-        flex-wrap: wrap;
-        display:block!important;
+    }
+
+    .navbar-fixed {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1050;
+    }
+    .width-fit-content{
+        width: 350px;
+        max-height: min-content;
+        
+    }
+    .special-img{
+        max-width: 350px;
+    }
+
+    .special-title {
+        font-size: 20px !important;
+    }
+
+    .img-fluid{
+        align-items: center!important;
+        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 25px 0 rgba(0, 0, 0, 0.19);
+        height: 500px;
+        object-fit:cover;
+    }
+    .container-restaurant{
+        max-width: fit-content;
+    }
+    .container{
+        padding-top:20px;
+        height: 100%;
+    }
+
+    #specials {
+        background-color: black;
+        background-size:cover;
+        height: 100%;
+        z-index:4;
+        position:relative;
+        background-attachment: absolute;
+    }
+    iframe{
+        max-width:fit-content;
+    }
+
+    #location {
+        display: block !important;
         padding: 20px;
-        width:100%;
-        height: auto;
-        justify-content: center!important;
-        align-items: center;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
