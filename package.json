@@ -1,6 +1,7 @@
 {
   "name": "lanterna-marketplace",
   "version": "1.0.0",
+  "type": "module",
   "description": "italian-restaurant",
   "main": "index.js",
   "proxy": {
@@ -10,7 +11,7 @@
     }
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node run dev",
     "dev": "nodemon server.js"
   },
   "repository": {
