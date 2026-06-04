@@ -25,6 +25,5 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const analytics = await isSupported().then(yes => yes ? getAnalytics(app) : null);
 
 // const analytics = getAnalytics(app);
